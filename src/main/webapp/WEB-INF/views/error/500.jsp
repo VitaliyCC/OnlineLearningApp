@@ -8,7 +8,7 @@
 
 <body>
 <h1>Opps...</h1>
-<p>Click <a href="/index"> here</a>
+<p>Click <a href="/"> here</a>
   to go back to the Homepage.</p>
 <br>
 <table width = "100%" border = "1">
