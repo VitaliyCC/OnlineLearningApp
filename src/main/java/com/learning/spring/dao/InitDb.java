@@ -26,7 +26,8 @@ public class InitDb {
         File script = resource.getFile();
         ScriptRunner runner;
         runner = new ScriptRunner(JDBC.getInstance().getConnection());
-
+        runner.setAutoCommit(true);
+        runner.setDelimiter("/");
         try {
             statement.execute("SELECT ID from Iogin_info");
             ResultSet resultSet  = statement.getResultSet();

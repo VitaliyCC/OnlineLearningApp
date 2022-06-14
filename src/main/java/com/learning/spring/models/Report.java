@@ -9,7 +9,7 @@ public class Report {
     private Date sendTime;
     private Integer studentId;
     private String taskName;
-    private Boolean checked;
+    private Boolean checked =false;
 
     public Report() {
     }

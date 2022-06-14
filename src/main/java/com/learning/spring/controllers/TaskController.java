@@ -63,7 +63,7 @@ public class TaskController {
     @GetMapping("/show")
     @PreAuthorize("hasAnyAuthority('users:write','users:check')")
     public String showTaskIndex(@RequestParam("id") int id,
-                                @RequestParam("nameT") String name, Model model) {
+                                @RequestParam("nameT") String name, Model model) throws SQLException {
         Task task = taskDAO.showAllInfo(name);
 
         for (Report report : task.getReportList()) {
@@ -89,7 +89,7 @@ public class TaskController {
         }
         LOGGER.debug("Save new task" + task.toString());
 
-        return "redirect:/index";
+        return "redirect:/";
     }
 
     @PostMapping("/delete")
@@ -99,6 +99,6 @@ public class TaskController {
 
         taskDAO.delete(name);
 
-        return "redirect:/index";
+        return "redirect:/";
     }
 }

@@ -33,14 +33,14 @@
             <div class="invalid-feedback">Please fill this field correctly.</div>
         </div>
         <div class="mb-3">
-            <label for="reportId" class="form-label">Your id: </label>
+            <label for="reportId" class="form-label">Report id: </label>
             <input type="number" name="reportId" id="reportId" class="form-control" value="<%=review.getReportId()%>"
                    readonly/>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Please fill this field correctly.</div>
         </div>
         <div class="mb-3">
-            <label for="teacherId" class="form-label">Task name: </label>
+            <label for="teacherId" class="form-label">Your id: </label>
             <input type="number" name="teacherId"  id="teacherId" class="form-control" value="<%=review.getTeacherId()%>"
                    readonly/> <!--fix-->
             <div class="valid-feedback">Valid.</div>

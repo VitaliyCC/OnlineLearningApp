@@ -68,6 +68,6 @@ public class ReviewController {
 
         LOGGER.debug("Save new review" + review.toString());
 
-        return "redirect:/index";
+        return "redirect:/";
     }
 }

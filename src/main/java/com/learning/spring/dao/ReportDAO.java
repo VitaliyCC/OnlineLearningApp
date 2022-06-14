@@ -27,15 +27,18 @@ public class ReportDAO {
         preparedStatement.executeUpdate();
     }
 
-    public Boolean isCheckedReport(Integer id) {
+    public Boolean isCheckedReport(Integer id) throws SQLException {
         Connection connection = JDBC.getInstance().getConnection();
-        try {
-            Statement statement = connection.createStatement();
-            statement.execute("SELECT * FROM REVIEW WHERE REPORT_ID="+ id);
-        } catch (SQLException e) {
-            return false;
+        ResultSet resultSet = null;
+
+        Statement statement = connection.createStatement();
+        statement.execute("SELECT * FROM REVIEW WHERE REPORT_ID=" + id);
+        resultSet = statement.getResultSet();
+
+        if (resultSet.next()) {
+            return true;
         }
-        return true;
+        return false;
     }
 
     public static Report parseReport(ResultSet resultSetReport) throws SQLException {

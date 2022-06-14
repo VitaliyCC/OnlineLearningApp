@@ -20,7 +20,7 @@
         <div class="mb-3 mt-3">
             <label for="solutions" class="form-label">Enter link on your online docement with solution: </label>
             <input type="text" name="solutions" id="solutions" class="form-control"
-                   required minlength="4" maxlength="100"/>
+                   required minlength="4" maxlength="1000"/>
             <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Please fill this field correctly.</div>
         </div>

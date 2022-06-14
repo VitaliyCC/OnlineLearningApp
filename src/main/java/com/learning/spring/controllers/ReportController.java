@@ -52,6 +52,6 @@ public class ReportController {
 
         LOGGER.debug("Save new report" + report.toString());
 
-        return "redirect:/index";
+        return "redirect:/";
     }
 }
