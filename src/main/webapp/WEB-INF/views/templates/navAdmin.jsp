@@ -28,6 +28,9 @@
             <li class="nav-item">
                 <a class="nav-link active" href="/operation/connectingPerson">Work with connecting</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/service">View schedule</a>
+            </li>
 
             <li class="nav-item">
                 <form action="/auth/logout" method="POST">

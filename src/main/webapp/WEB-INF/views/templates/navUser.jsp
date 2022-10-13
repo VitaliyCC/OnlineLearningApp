@@ -14,6 +14,9 @@
                 <a class="nav-link active" href="/index">Home</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" href="/service">View schedule</a>
+            </li>
+            <li class="nav-item">
                 <form action="/auth/logout" method="POST">
                     <button style="color: black" class="nav-link active" type="submit">Logout</button>
                 </form>

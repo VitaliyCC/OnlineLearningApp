@@ -1,5 +1,9 @@
 HELP.md
-target/
+target/classes
+target/generated-sources
+target/maven-archiver
+target/maven-status
+target/OnlineLearning-0.0.1-SNAPSHOT
 src/test/java
 .mvn/wrapper/maven-wrapper.jar
 .mvn/wrapper/maven-wrapper.properties

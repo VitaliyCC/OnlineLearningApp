@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
+import org.springframework.util.FileCopyUtils;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -21,18 +21,17 @@ public class InitDb {
 
     @Autowired
     public InitDb() throws IOException, SQLException {
-        Resource resource = new ClassPathResource("dataBase.sql");
+        ClassPathResource classPathResource = new ClassPathResource("dataBase.sql");
         Statement statement = JDBC.getInstance().getConnection().createStatement();
-        File script = resource.getFile();
         ScriptRunner runner;
         runner = new ScriptRunner(JDBC.getInstance().getConnection());
         runner.setAutoCommit(true);
         runner.setDelimiter("/");
         try {
             statement.execute("SELECT ID from Iogin_info");
-            ResultSet resultSet  = statement.getResultSet();
+            ResultSet resultSet = statement.getResultSet();
         } catch (SQLException e) {
-            runner.runScript(new FileReader(script));
+            runner.runScript(new InputStreamReader(classPathResource.getInputStream()));
             LOGGER.debug("Created scheme in db");
         }
     }
