@@ -7,13 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
-
 @Controller
 @RequestMapping("service")
 public class ScheduleController {
     private final ScheduleService scheduleService;
-    private final Logger LOGGER = Logger.getLogger(TaskController.class);
+    private final Logger LOGGER = Logger.getLogger(ScheduleController.class);
 
     public ScheduleController(ScheduleService scheduleService) {
         this.scheduleService = scheduleService;
@@ -21,17 +19,17 @@ public class ScheduleController {
 
     @GetMapping("")
     @PreAuthorize("hasAnyAuthority('users:check','users:write','users:read')")
-    public String showFormForGroupInfo(Model model) throws IOException {
+    public String showFormForGroupInfo(Model model) {
         model.addAttribute("departments", scheduleService.getAllDepartments());
-
+        LOGGER.debug("Returned view with schedule form and departments!");
         return "service/form";
     }
 
     @GetMapping("/groups")
     @PreAuthorize("hasAnyAuthority('users:check','users:write','users:read')")
-    public String findGroupByDepartment(@RequestParam int deptId,Model model) throws IOException {
-        model.addAttribute("groups",scheduleService.getAllGroupsByDepartment(deptId));
-
+    public String findGroupByDepartment(@RequestParam int deptId, Model model) {
+        model.addAttribute("groups", scheduleService.getAllGroupsByDepartment(deptId));
+        LOGGER.debug("Returned view with all group by department!");
         return "service/groups";
     }
 
@@ -42,9 +40,9 @@ public class ScheduleController {
             @RequestParam int course,
             @RequestParam int stream,
             @RequestParam int groupCode,
-            @RequestParam int subGroupCode,Model model) throws IOException {
-        model.addAttribute("schedule",scheduleService.findScheduleByGroup(deptId, course, stream, groupCode, subGroupCode));
-
+            @RequestParam int subGroupCode, Model model) {
+        model.addAttribute("schedule", scheduleService.findScheduleByGroup(deptId, course, stream, groupCode, subGroupCode));
+        LOGGER.debug("Returned view with schedule by group info!");
         return "service/scheduleInfo";
     }
 }

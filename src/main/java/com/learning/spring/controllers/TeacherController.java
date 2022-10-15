@@ -74,7 +74,7 @@ public class TeacherController {
             userDAO.save(user);
         } catch (SQLException e) {
             LOGGER.error("Incorrect student to save "+e);
-            throw new SQLException("Incorrect student to save ");
+            throw new SQLException("Incorrect teacher to save ");
         }
 
         LOGGER.debug("Save new teacher" + teacher.toString());
