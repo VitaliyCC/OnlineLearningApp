@@ -37,7 +37,7 @@
 </div>
 <div class="container mt-3">
     <br>
-    <form class="form_" method="post" action="/operation/connectingPerson/S/delete?id=<%=connectingS.getStudentId()%>">
+    <form class="form_" method="post" action="/operation/connectingPerson/S/delete?id=<%=connectingS.getId()%>">
         <button type="submit" class="btn btn-outline-danger">Delete connecting</button>
     </form>
 </div>
