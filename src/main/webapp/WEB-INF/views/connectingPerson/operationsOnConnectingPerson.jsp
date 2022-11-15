@@ -161,7 +161,7 @@
                         <div class="invalid-feedback">Please fill this field correctly.</div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" id="createSConnect" class="btn btn-primary">Create</button>
                 </form>
             </div>
         </div>
@@ -198,7 +198,7 @@
                         <div class="invalid-feedback">Please fill this field correctly.</div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" id="createTConnect" class="btn btn-primary">Create</button>
                 </form>
             </div>
         </div>
