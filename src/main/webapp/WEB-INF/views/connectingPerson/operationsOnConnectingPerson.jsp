@@ -35,7 +35,7 @@
                     <br>
 
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newStudent">
-                        Add new connection
+                        Add new connection student
                     </button>
                     <br>
                 </div>
@@ -89,7 +89,7 @@
 
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#newTeacher">
-                        Add new connection
+                        Add new connection teacher
                     </button>
                     <br>
                 </div>
