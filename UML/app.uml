@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.learning.spring</OriginalElement>
+  <nodes>
+    <node x="3909.4738194444503" y="595.0">com.learning.spring.dao.JDBC</node>
+    <node x="7123.813472222226" y="4105.0">com.learning.spring.controllers.AdminController</node>
+    <node x="4490.416666666667" y="4094.0">com.learning.spring.controllers.StudentController</node>
+    <node x="0.0" y="3389.0">com.learning.spring.controllers.TaskController</node>
+    <node x="129.25" y="2729.0">com.learning.spring.controllers.ConnectingController</node>
+    <node x="2421.493680555558" y="2762.0">com.learning.spring.dao.SubjectDAO</node>
+    <node x="2453.8134722222258" y="4138.0">com.learning.spring.rest.ReviewRestController</node>
+    <node x="3786.9752083333397" y="1790.0">com.learning.spring.models.Student</node>
+    <node x="2481.243680555558" y="3389.0">com.learning.spring.rest.SubjectRestController</node>
+    <node x="265.6527777777778" y="4360.0">com.learning.spring.models.Schedule</node>
+    <node x="5517.368680555558" y="2021.0">com.learning.spring.security.model.Role</node>
+    <node x="3260.8270138888915" y="2806.0">com.learning.spring.dao.ReviewDAO</node>
+    <node x="5654.725208333341" y="3367.0">com.learning.spring.security.dao.UserDAO</node>
+    <node x="3455.916666666667" y="3356.0">com.learning.spring.dao.StudentDAO</node>
+    <node x="1752.6527777777778" y="4327.0">com.learning.spring.security.controller.AuthController</node>
+    <node x="4823.583333333334" y="3367.0">com.learning.spring.dao.TeacherDAO</node>
+    <node x="5255.098819444451" y="4116.0">com.learning.spring.rest.TeacherRestController</node>
+    <node x="3317.910347222225" y="484.0">com.learning.spring.models.Task</node>
+    <node x="1012.6527777777778" y="4393.0">com.learning.spring.models.Department</node>
+    <node x="3008.166666666667" y="4127.0">com.learning.spring.controllers.ReviewController</node>
+    <node x="5568.618680555559" y="2661.0">com.learning.spring.security.model.User</node>
+    <node x="6170.958333333334" y="2817.0">com.learning.spring.security.util.Encoder</node>
+    <node x="6135.225208333341" y="3310.0">com.learning.spring.security.SecurityUser</node>
+    <node x="1133.1884722222258" y="2740.0">com.learning.spring.rest.ConnectingRestController</node>
+    <node x="1562.368680555558" y="2012.0">com.learning.spring.dao.ConnectingStudentDAO</node>
+    <node x="6883.225208333341" y="3367.0">com.learning.spring.dao.AdminDAO</node>
+    <node x="3544.932152777784" y="1016.0">com.learning.spring.models.Subject</node>
+    <node x="47.486111111111086" y="4941.0">com.learning.spring.controllers.ScheduleController</node>
+    <node x="5558.868680555558" y="1192.0">com.learning.spring.security.model.Permission</node>
+    <node x="2626.035347222225" y="528.0">com.learning.spring.models.ConnectingStudent</node>
+    <node x="3011.910347222225" y="528.0">com.learning.spring.models.ConnectingTeacher</node>
+    <node x="7124.225208333341" y="2606.0">com.learning.spring.models.Admin</node>
+    <node x="5613.743680555559" y="4094.0">com.learning.spring.controllers.TeacherController</node>
+    <node x="1946.6527777777778" y="4327.0">com.learning.spring.security.controller.AccessDeniedController</node>
+    <node x="2742.243680555558" y="3367.0">com.learning.spring.controllers.SubjectController</node>
+    <node x="785.5" y="2056.0">com.learning.spring.controllers.ReportController</node>
+    <node x="5909.743680555559" y="4149.0">com.learning.spring.security.UserDetailsServiceImpl</node>
+    <node x="6516.225208333341" y="3400.0">com.learning.spring.security.config.SecurityConfig</node>
+    <node x="2950.410347222225" y="0.0">com.learning.spring.models.Report</node>
+    <node x="533.5" y="1205.0">com.learning.spring.dao.ReportDAO</node>
+    <node x="1923.368680555558" y="2012.0">com.learning.spring.dao.ConnectingTeacherDAO</node>
+    <node x="1329.6527777777778" y="4455.0">com.learning.spring.ServletInitializer</node>
+    <node x="51.65277777777783" y="4472.0">com.learning.spring.util.JsonReader</node>
+    <node x="129.25" y="2067.0">com.learning.spring.rest.ReportRestController</node>
+    <node x="621.6527777777778" y="4327.0">com.learning.spring.models.Group</node>
+    <node x="6569.5" y="4116.0">com.learning.spring.rest.AdminRestController</node>
+    <node x="3813.791666666667" y="4149.0">com.learning.spring.controllers.DefaultController</node>
+    <node x="5231.563472222226" y="1239.0">com.learning.spring.dao.InitDb</node>
+    <node x="0.0" y="4767.0">com.learning.spring.service.ScheduleService</node>
+    <node x="4206.952013888892" y="1094.0">com.learning.spring.models.Review</node>
+    <node x="1351.5634722222258" y="3400.0">com.learning.spring.rest.TaskRestController</node>
+    <node x="1081.5" y="2023.0">com.learning.spring.dao.TaskDAO</node>
+    <node x="3314.166666666667" y="4116.0">com.learning.spring.rest.StudentRestController</node>
+    <node x="1409.1527777777778" y="4327.0">com.learning.spring.OnlineLearningApplication</node>
+    <node x="4678.563472222226" y="1790.0">com.learning.spring.models.Teacher</node>
+    <node x="3937.327013888892" y="156.0">com.learning.spring.util.PropertiesDbUtil</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.models.Student" relationship="CREATE">
+      <point x="-123.0" y="-94.0" />
+      <point x="4551.916666666667" y="4073.0" />
+      <point x="4288.85020833334" y="4073.0" />
+      <point x="4288.85020833334" y="3863.0" />
+      <point x="4356.313472222226" y="3863.0" />
+      <point x="4356.313472222226" y="2564.0" />
+      <point x="4256.35020833334" y="2564.0" />
+      <point x="4256.35020833334" y="2504.0" />
+      <point x="4089.2252083333397" y="2504.0" />
+      <point x="100.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.dao.ReportDAO" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3138.0" />
+      <point x="3496.3270138888915" y="3138.0" />
+      <point x="3496.3270138888915" y="1758.0" />
+      <point x="1156.2668750000066" y="1758.0" />
+      <point x="1156.2668750000066" y="1538.0" />
+      <point x="706.75" y="1538.0" />
+      <point x="57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.dao.ConnectingTeacherDAO" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2484.0" />
+      <point x="2179.868680555558" y="2484.0" />
+      <point x="85.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.SubjectRestController" target="com.learning.spring.dao.SubjectDAO" relationship="TO_ONE">
+      <point x="-60.0" y="-72.0" />
+      <point x="2541.243680555558" y="3198.0" />
+      <point x="2400.493680555558" y="3198.0" />
+      <point x="2400.493680555558" y="3188.0" />
+      <point x="2477.493680555558" y="3188.0" />
+      <point x="-56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.dao.AdminDAO" relationship="TO_ONE">
+      <point x="0.0" y="-72.0" />
+      <point x="6712.5" y="4073.0" />
+      <point x="6820.993680555559" y="4073.0" />
+      <point x="6820.993680555559" y="4013.0" />
+      <point x="6988.225208333341" y="4013.0" />
+      <point x="6988.225208333341" y="3643.0" />
+      <point x="6938.225208333341" y="3643.0" />
+      <point x="-55.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReportController" target="com.learning.spring.models.Report" relationship="CREATE">
+      <point x="0.0" y="-50.0" />
+      <point x="923.0" y="934.0" />
+      <point x="762.375" y="934.0" />
+      <point x="762.375" y="453.0" />
+      <point x="554.8736111111107" y="453.0" />
+      <point x="554.8736111111107" y="443.0" />
+      <point x="2997.4103472222246" y="443.0" />
+      <point x="-94.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.dao.TaskDAO" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2474.0" />
+      <point x="2300.493680555558" y="2474.0" />
+      <point x="2300.493680555558" y="2454.0" />
+      <point x="1317.0" y="2454.0" />
+      <point x="78.5" y="83.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Subject" target="com.learning.spring.models.ConnectingTeacher" relationship="DEPENDENCY">
+      <point x="-73.25" y="-250.0" />
+      <point x="3618.182152777784" y="964.0" />
+      <point x="3275.5634722222258" y="964.0" />
+      <point x="3275.5634722222258" y="904.0" />
+      <point x="3081.307152777784" y="904.0" />
+      <point x="3081.307152777784" y="874.0" />
+      <point x="3154.910347222225" y="874.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3853.0" />
+      <point x="4345.313472222226" y="3853.0" />
+      <point x="4345.313472222226" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TaskRestController" target="com.learning.spring.dao.TaskDAO" relationship="DEPENDENCY">
+      <point x="69.5" y="-61.0" />
+      <point x="1560.0634722222258" y="3288.0" />
+      <point x="2300.493680555558" y="3288.0" />
+      <point x="2300.493680555558" y="2454.0" />
+      <point x="1317.0" y="2454.0" />
+      <point x="78.5" y="83.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.dao.StudentDAO" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3783.0" />
+      <point x="3536.166666666667" y="3783.0" />
+      <point x="-80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ConnectingRestController" target="com.learning.spring.dao.ConnectingStudentDAO" relationship="DEPENDENCY">
+      <point x="113.75" y="-116.0" />
+      <point x="1474.4384722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2504.0" />
+      <point x="1817.368680555558" y="2504.0" />
+      <point x="85.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.security.model.User" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3248.0" />
+      <point x="5681.618680555559" y="3248.0" />
+      <point x="5681.618680555559" y="3208.0" />
+      <point x="5627.618680555559" y="3208.0" />
+      <point x="-59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Subject" target="com.learning.spring.models.ConnectingTeacher" relationship="TO_MANY">
+      <point x="73.25" y="-250.0" />
+      <point x="3764.682152777784" y="954.0" />
+      <point x="3454.7301388888923" y="954.0" />
+      <point x="3454.7301388888923" y="884.0" />
+      <point x="3250.243680555558" y="884.0" />
+      <point x="95.33333333333331" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.security.SecurityUser" target="com.learning.spring.security.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="6315.225208333341" y="3238.0" />
+      <point x="5681.618680555559" y="3238.0" />
+      <point x="5681.618680555559" y="3208.0" />
+      <point x="5627.618680555559" y="3208.0" />
+      <point x="-59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.AdminDAO" target="com.learning.spring.security.model.User" relationship="DEPENDENCY">
+      <point x="-55.0" y="-94.0" />
+      <point x="6938.225208333341" y="3288.0" />
+      <point x="6988.225208333341" y="3288.0" />
+      <point x="6988.225208333341" y="3218.0" />
+      <point x="5681.618680555559" y="3218.0" />
+      <point x="5681.618680555559" y="3208.0" />
+      <point x="5627.618680555559" y="3208.0" />
+      <point x="-59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReportRestController" target="com.learning.spring.dao.ReportDAO" relationship="DEPENDENCY">
+      <point x="58.25" y="-39.0" />
+      <point x="304.0" y="1558.0" />
+      <point x="1156.2668750000066" y="1558.0" />
+      <point x="1156.2668750000066" y="1538.0" />
+      <point x="706.75" y="1538.0" />
+      <point x="57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ScheduleController" target="com.learning.spring.service.ScheduleService" relationship="TO_ONE">
+      <point x="-89.5" y="-61.0" />
+      <point x="136.9861111111111" y="4916.0" />
+      <point x="116.75" y="4916.0" />
+      <point x="-116.75" y="62.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.dao.TeacherDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="5751.743680555559" y="4073.0" />
+      <point x="5760.993680555559" y="4073.0" />
+      <point x="5760.993680555559" y="3743.0" />
+      <point x="4880.333333333334" y="3743.0" />
+      <point x="-56.75" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.UserDetailsServiceImpl" target="com.learning.spring.security.SecurityUser" relationship="DEPENDENCY">
+      <point x="66.25" y="-39.0" />
+      <point x="6108.493680555559" y="4073.0" />
+      <point x="6068.848819444451" y="4073.0" />
+      <point x="6068.848819444451" y="3993.0" />
+      <point x="6315.225208333341" y="3993.0" />
+      <point x="0.0" y="151.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReviewRestController" target="com.learning.spring.dao.StudentDAO" relationship="TO_ONE">
+      <point x="96.0" y="-50.0" />
+      <point x="2741.8134722222258" y="4073.0" />
+      <point x="2993.743680555558" y="4073.0" />
+      <point x="2993.743680555558" y="3823.0" />
+      <point x="4065.3488194444503" y="3823.0" />
+      <point x="4065.3488194444503" y="3743.0" />
+      <point x="3696.666666666667" y="3743.0" />
+      <point x="80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ConnectingController" target="com.learning.spring.dao.ConnectingTeacherDAO" relationship="DEPENDENCY">
+      <point x="-108.0" y="-127.0" />
+      <point x="237.25" y="2584.0" />
+      <point x="649.0" y="2584.0" />
+      <point x="649.0" y="2524.0" />
+      <point x="2179.868680555558" y="2524.0" />
+      <point x="85.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReviewRestController" target="com.learning.spring.dao.ReviewDAO" relationship="TO_ONE">
+      <point x="96.0" y="-50.0" />
+      <point x="2741.8134722222258" y="4073.0" />
+      <point x="2993.743680555558" y="4073.0" />
+      <point x="2993.743680555558" y="3248.0" />
+      <point x="3090.910347222225" y="3248.0" />
+      <point x="3090.910347222225" y="3148.0" />
+      <point x="3314.3270138888915" y="3148.0" />
+      <point x="-53.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.models.Report" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3138.0" />
+      <point x="3719.3270138888915" y="3138.0" />
+      <point x="3719.3270138888915" y="2544.0" />
+      <point x="4200.47520833334" y="2544.0" />
+      <point x="4200.47520833334" y="1718.0" />
+      <point x="5221.063472222226" y="1718.0" />
+      <point x="5221.063472222226" y="463.0" />
+      <point x="3091.410347222225" y="463.0" />
+      <point x="0.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReviewController" target="com.learning.spring.dao.StudentDAO" relationship="DEPENDENCY">
+      <point x="95.33333333333337" y="-61.0" />
+      <point x="3246.5" y="4073.0" />
+      <point x="3187.410347222225" y="4073.0" />
+      <point x="3187.410347222225" y="3803.0" />
+      <point x="3536.166666666667" y="3803.0" />
+      <point x="-80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Student" target="com.learning.spring.models.Review" relationship="DEPENDENCY">
+      <point x="-100.75" y="-316.0" />
+      <point x="3887.7252083333397" y="1768.0" />
+      <point x="4155.598819444451" y="1768.0" />
+      <point x="4155.598819444451" y="1698.0" />
+      <point x="4355.452013888892" y="1698.0" />
+      <point x="0.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.security.dao.UserDAO" target="com.learning.spring.security.util.Encoder" relationship="DEPENDENCY">
+      <point x="50.5" y="-94.0" />
+      <point x="5806.225208333341" y="3288.0" />
+      <point x="5819.243680555559" y="3288.0" />
+      <point x="5819.243680555559" y="3258.0" />
+      <point x="6294.458333333334" y="3258.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReportController" target="com.learning.spring.dao.ReportDAO" relationship="DEPENDENCY">
+      <point x="91.66666666666674" y="-50.0" />
+      <point x="1014.6666666666665" y="1758.0" />
+      <point x="1156.2668750000066" y="1758.0" />
+      <point x="1156.2668750000066" y="1538.0" />
+      <point x="706.75" y="1538.0" />
+      <point x="57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.dao.ReportDAO" relationship="DEPENDENCY">
+      <point x="86.75" y="-72.0" />
+      <point x="260.25" y="3288.0" />
+      <point x="108.25" y="3288.0" />
+      <point x="108.25" y="3198.0" />
+      <point x="118.75" y="3198.0" />
+      <point x="118.75" y="1758.0" />
+      <point x="1156.2668750000066" y="1758.0" />
+      <point x="1156.2668750000066" y="1538.0" />
+      <point x="706.75" y="1538.0" />
+      <point x="57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.dao.StudentDAO" relationship="TO_ONE">
+      <point x="99.0" y="-72.0" />
+      <point x="3561.666666666667" y="4073.0" />
+      <point x="3895.3270138888915" y="4073.0" />
+      <point x="3895.3270138888915" y="3843.0" />
+      <point x="4065.3488194444503" y="3843.0" />
+      <point x="4065.3488194444503" y="3743.0" />
+      <point x="3696.666666666667" y="3743.0" />
+      <point x="80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.dao.AdminDAO" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="4023.0" />
+      <point x="7003.225208333341" y="4023.0" />
+      <point x="7003.225208333341" y="3633.0" />
+      <point x="7048.225208333341" y="3633.0" />
+      <point x="55.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3853.0" />
+      <point x="4315.313472222226" y="3853.0" />
+      <point x="4315.313472222226" y="1748.0" />
+      <point x="3691.432152777784" y="1748.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Task" target="com.learning.spring.models.Report" relationship="DEPENDENCY">
+      <point x="-59.5" y="-184.0" />
+      <point x="3377.410347222225" y="463.0" />
+      <point x="3091.410347222225" y="463.0" />
+      <point x="0.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.dao.TaskDAO" relationship="DEPENDENCY">
+      <point x="86.75" y="-72.0" />
+      <point x="260.25" y="3288.0" />
+      <point x="108.25" y="3288.0" />
+      <point x="108.25" y="3198.0" />
+      <point x="746.25" y="3198.0" />
+      <point x="746.25" y="2544.0" />
+      <point x="2300.493680555558" y="2544.0" />
+      <point x="2300.493680555558" y="2454.0" />
+      <point x="1317.0" y="2454.0" />
+      <point x="78.5" y="83.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="92.0" y="-94.0" />
+      <point x="5843.743680555559" y="3983.0" />
+      <point x="6082.100208333341" y="3983.0" />
+      <point x="6082.100208333341" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.SubjectController" target="com.learning.spring.dao.SubjectDAO" relationship="DEPENDENCY">
+      <point x="60.25" y="-94.0" />
+      <point x="2922.993680555558" y="3188.0" />
+      <point x="2792.118680555558" y="3188.0" />
+      <point x="2792.118680555558" y="3148.0" />
+      <point x="2589.493680555558" y="3148.0" />
+      <point x="56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.ServletInitializer" target="com.learning.spring.OnlineLearningApplication" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.learning.spring.security.model.User" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="-59.0" y="-195.0" />
+      <point x="5627.618680555559" y="2584.0" />
+      <point x="5345.563472222226" y="2584.0" />
+      <point x="5345.563472222226" y="2544.0" />
+      <point x="5516.833333333334" y="2544.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.dao.StudentDAO" relationship="TO_ONE">
+      <point x="123.0" y="-94.0" />
+      <point x="4797.916666666667" y="4053.0" />
+      <point x="4650.202013888892" y="4053.0" />
+      <point x="4650.202013888892" y="3763.0" />
+      <point x="4065.3488194444503" y="3763.0" />
+      <point x="4065.3488194444503" y="3743.0" />
+      <point x="3696.666666666667" y="3743.0" />
+      <point x="80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReviewController" target="com.learning.spring.dao.ReviewDAO" relationship="TO_ONE">
+      <point x="0.0" y="-61.0" />
+      <point x="3151.166666666667" y="4073.0" />
+      <point x="3090.910347222225" y="4073.0" />
+      <point x="3090.910347222225" y="3148.0" />
+      <point x="3314.3270138888915" y="3148.0" />
+      <point x="-53.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.models.Report" relationship="DEPENDENCY">
+      <point x="86.75" y="-72.0" />
+      <point x="260.25" y="3288.0" />
+      <point x="108.25" y="3288.0" />
+      <point x="108.25" y="3198.0" />
+      <point x="97.75" y="3198.0" />
+      <point x="97.75" y="463.0" />
+      <point x="3091.410347222225" y="463.0" />
+      <point x="0.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ConnectingController" target="com.learning.spring.models.ConnectingTeacher" relationship="DEPENDENCY">
+      <point x="-108.0" y="-127.0" />
+      <point x="237.25" y="2584.0" />
+      <point x="649.0" y="2584.0" />
+      <point x="649.0" y="2454.0" />
+      <point x="775.0" y="2454.0" />
+      <point x="775.0" y="984.0" />
+      <point x="3081.307152777784" y="984.0" />
+      <point x="3081.307152777784" y="874.0" />
+      <point x="3154.910347222225" y="874.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.dao.AdminDAO" relationship="TO_ONE">
+      <point x="-88.0" y="-83.0" />
+      <point x="7167.813472222226" y="4053.0" />
+      <point x="7103.313472222226" y="4053.0" />
+      <point x="7103.313472222226" y="3683.0" />
+      <point x="6988.225208333341" y="3683.0" />
+      <point x="6988.225208333341" y="3643.0" />
+      <point x="6938.225208333341" y="3643.0" />
+      <point x="-55.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Student" target="com.learning.spring.models.Subject" relationship="TO_MANY">
+      <point x="100.75" y="-316.0" />
+      <point x="4089.2252083333397" y="1758.0" />
+      <point x="4306.938472222226" y="1758.0" />
+      <point x="4306.938472222226" y="1708.0" />
+      <point x="4416.291666666667" y="1708.0" />
+      <point x="4416.291666666667" y="1648.0" />
+      <point x="3789.0988194444503" y="1648.0" />
+      <point x="97.66666666666674" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.models.ConnectingTeacher" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2464.0" />
+      <point x="2376.743680555558" y="2464.0" />
+      <point x="2376.743680555558" y="1668.0" />
+      <point x="3265.0634722222258" y="1668.0" />
+      <point x="3265.0634722222258" y="984.0" />
+      <point x="3081.307152777784" y="984.0" />
+      <point x="3081.307152777784" y="874.0" />
+      <point x="3154.910347222225" y="874.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.SubjectRestController" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="60.0" y="-72.0" />
+      <point x="2661.243680555558" y="3218.0" />
+      <point x="2388.536146559862" y="3218.0" />
+      <point x="2388.536146559862" y="1748.0" />
+      <point x="3691.432152777784" y="1748.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Student" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="-100.75" y="-316.0" />
+      <point x="3887.7252083333397" y="1768.0" />
+      <point x="4155.598819444451" y="1768.0" />
+      <point x="4155.598819444451" y="1688.0" />
+      <point x="3691.432152777784" y="1688.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ConnectingController" target="com.learning.spring.dao.ConnectingStudentDAO" relationship="TO_ONE">
+      <point x="108.0" y="-127.0" />
+      <point x="453.25" y="2574.0" />
+      <point x="756.8134722222258" y="2574.0" />
+      <point x="756.8134722222258" y="2484.0" />
+      <point x="1183.875" y="2484.0" />
+      <point x="1183.875" y="2474.0" />
+      <point x="1647.368680555558" y="2474.0" />
+      <point x="-85.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="-92.0" y="-94.0" />
+      <point x="5659.743680555559" y="4073.0" />
+      <point x="5638.938472222226" y="4073.0" />
+      <point x="5638.938472222226" y="3963.0" />
+      <point x="5760.725208333341" y="3963.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="-123.0" y="-94.0" />
+      <point x="4551.916666666667" y="4073.0" />
+      <point x="4288.85020833334" y="4073.0" />
+      <point x="4288.85020833334" y="3863.0" />
+      <point x="4356.313472222226" y="3863.0" />
+      <point x="4356.313472222226" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Task" target="com.learning.spring.models.Report" relationship="TO_MANY">
+      <point x="59.5" y="-184.0" />
+      <point x="3496.410347222225" y="443.0" />
+      <point x="3441.910347222225" y="443.0" />
+      <point x="3441.910347222225" y="433.0" />
+      <point x="3185.410347222225" y="433.0" />
+      <point x="94.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.models.Teacher" relationship="DEPENDENCY">
+      <point x="-99.66666666666669" y="-72.0" />
+      <point x="5304.932152777784" y="4073.0" />
+      <point x="5058.348819444451" y="4073.0" />
+      <point x="5058.348819444451" y="3733.0" />
+      <point x="4629.331944444444" y="3733.0" />
+      <point x="4629.331944444444" y="2574.0" />
+      <point x="5345.563472222226" y="2574.0" />
+      <point x="5345.563472222226" y="2504.0" />
+      <point x="5013.813472222226" y="2504.0" />
+      <point x="111.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.service.ScheduleService" target="com.learning.spring.models.Department" relationship="CREATE">
+      <point x="155.66666666666674" y="-62.0" />
+      <point x="389.16666666666674" y="4747.0" />
+      <point x="799.1666666666667" y="4747.0" />
+      <point x="799.1666666666667" y="4737.0" />
+      <point x="1148.6527777777778" y="4737.0" />
+      <point x="0.0" y="129.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.dao.TeacherDAO" relationship="TO_ONE">
+      <point x="-92.0" y="-94.0" />
+      <point x="5659.743680555559" y="4073.0" />
+      <point x="5638.938472222226" y="4073.0" />
+      <point x="5638.938472222226" y="3853.0" />
+      <point x="5559.456944444444" y="3853.0" />
+      <point x="5559.456944444444" y="3723.0" />
+      <point x="4993.833333333334" y="3723.0" />
+      <point x="56.75" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.models.Admin" relationship="DEPENDENCY">
+      <point x="95.33333333333337" y="-72.0" />
+      <point x="6807.833333333334" y="4063.0" />
+      <point x="7113.313472222226" y="4063.0" />
+      <point x="7113.313472222226" y="4043.0" />
+      <point x="7327.725208333341" y="4043.0" />
+      <point x="7327.725208333341" y="3248.0" />
+      <point x="7421.975208333341" y="3248.0" />
+      <point x="99.25" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReviewRestController" target="com.learning.spring.dao.StudentDAO" relationship="DEPENDENCY">
+      <point x="-96.0" y="-50.0" />
+      <point x="2549.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="3793.0" />
+      <point x="3536.166666666667" y="3793.0" />
+      <point x="-80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ScheduleController" target="com.learning.spring.service.ScheduleService" relationship="DEPENDENCY">
+      <point x="89.5" y="-61.0" />
+      <point x="315.9861111111111" y="4916.0" />
+      <point x="350.25" y="4916.0" />
+      <point x="116.75" y="62.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.dao.ReportDAO" relationship="TO_ONE">
+      <point x="-86.75" y="-72.0" />
+      <point x="86.75" y="1768.0" />
+      <point x="219.56347222222576" y="1768.0" />
+      <point x="219.56347222222576" y="1538.0" />
+      <point x="591.25" y="1538.0" />
+      <point x="-57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TaskRestController" target="com.learning.spring.dao.SubjectDAO" relationship="DEPENDENCY">
+      <point x="69.5" y="-61.0" />
+      <point x="1560.0634722222258" y="3288.0" />
+      <point x="2300.493680555558" y="3288.0" />
+      <point x="2300.493680555558" y="3238.0" />
+      <point x="2792.118680555558" y="3238.0" />
+      <point x="2792.118680555558" y="3148.0" />
+      <point x="2589.493680555558" y="3148.0" />
+      <point x="56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="88.0" y="-83.0" />
+      <point x="7343.813472222226" y="4073.0" />
+      <point x="7443.313472222226" y="4073.0" />
+      <point x="7443.313472222226" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="2524.0" />
+      <point x="3776.4752083333397" y="2524.0" />
+      <point x="3776.4752083333397" y="1728.0" />
+      <point x="4102.848819444451" y="1728.0" />
+      <point x="4102.848819444451" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReportRestController" target="com.learning.spring.dao.ReportDAO" relationship="TO_ONE">
+      <point x="-58.25" y="-39.0" />
+      <point x="187.5" y="1768.0" />
+      <point x="219.56347222222576" y="1768.0" />
+      <point x="219.56347222222576" y="1538.0" />
+      <point x="591.25" y="1538.0" />
+      <point x="-57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TaskRestController" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="69.5" y="-61.0" />
+      <point x="1560.0634722222258" y="3288.0" />
+      <point x="2300.493680555558" y="3288.0" />
+      <point x="2300.493680555558" y="3198.0" />
+      <point x="2310.993680555558" y="3198.0" />
+      <point x="2310.993680555558" y="1748.0" />
+      <point x="3691.432152777784" y="1748.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.models.Admin" relationship="CREATE">
+      <point x="88.0" y="-83.0" />
+      <point x="7343.813472222226" y="4073.0" />
+      <point x="7443.313472222226" y="4073.0" />
+      <point x="7443.313472222226" y="3258.0" />
+      <point x="7317.725208333341" y="3258.0" />
+      <point x="7317.725208333341" y="3248.0" />
+      <point x="7223.475208333341" y="3248.0" />
+      <point x="-99.25" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.security.model.User" target="com.learning.spring.models.Teacher" relationship="DEPENDENCY">
+      <point x="-59.0" y="-195.0" />
+      <point x="5627.618680555559" y="2584.0" />
+      <point x="5345.563472222226" y="2584.0" />
+      <point x="5345.563472222226" y="2504.0" />
+      <point x="5013.813472222226" y="2504.0" />
+      <point x="111.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Teacher" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="-111.75" y="-316.0" />
+      <point x="4790.313472222226" y="1768.0" />
+      <point x="4807.60020833334" y="1768.0" />
+      <point x="4807.60020833334" y="1678.0" />
+      <point x="3691.432152777784" y="1678.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ReportDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="57.75" y="-61.0" />
+      <point x="706.75" y="944.0" />
+      <point x="3993.473819444451" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.security.dao.UserDAO" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="50.5" y="-94.0" />
+      <point x="5806.225208333341" y="3288.0" />
+      <point x="5819.243680555559" y="3288.0" />
+      <point x="5819.243680555559" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-83.0" />
+      <point x="7255.813472222226" y="3653.0" />
+      <point x="5588.706944444444" y="3653.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.dao.UserDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="50.5" y="-94.0" />
+      <point x="5806.225208333341" y="3288.0" />
+      <point x="5819.243680555559" y="3288.0" />
+      <point x="5819.243680555559" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.dao.SubjectDAO" relationship="DEPENDENCY">
+      <point x="56.75" y="-94.0" />
+      <point x="4993.833333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3158.0" />
+      <point x="2792.118680555558" y="3158.0" />
+      <point x="2792.118680555558" y="3148.0" />
+      <point x="2589.493680555558" y="3148.0" />
+      <point x="56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.UserDetailsServiceImpl" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="-66.25" y="-39.0" />
+      <point x="5975.993680555559" y="3723.0" />
+      <point x="5760.725208333341" y="3723.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ConnectingStudentDAO" target="com.learning.spring.models.ConnectingStudent" relationship="CREATE">
+      <point x="-85.0" y="-94.0" />
+      <point x="1647.368680555558" y="1598.0" />
+      <point x="2762.666666666667" y="1598.0" />
+      <point x="2762.666666666667" y="924.0" />
+      <point x="2673.535347222225" y="924.0" />
+      <point x="-95.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.models.Student" relationship="CREATE">
+      <point x="-80.25" y="-105.0" />
+      <point x="3536.166666666667" y="3258.0" />
+      <point x="3485.3270138888915" y="3258.0" />
+      <point x="3485.3270138888915" y="2564.0" />
+      <point x="4256.35020833334" y="2564.0" />
+      <point x="4256.35020833334" y="2504.0" />
+      <point x="4089.2252083333397" y="2504.0" />
+      <point x="100.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ConnectingRestController" target="com.learning.spring.dao.ConnectingTeacherDAO" relationship="DEPENDENCY">
+      <point x="113.75" y="-116.0" />
+      <point x="1474.4384722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2534.0" />
+      <point x="2179.868680555558" y="2534.0" />
+      <point x="85.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReviewRestController" target="com.learning.spring.models.Student" relationship="DEPENDENCY">
+      <point x="-96.0" y="-50.0" />
+      <point x="2549.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="3783.0" />
+      <point x="2410.993680555558" y="3783.0" />
+      <point x="2410.993680555558" y="2574.0" />
+      <point x="3765.4752083333397" y="2574.0" />
+      <point x="3765.4752083333397" y="2504.0" />
+      <point x="3887.7252083333397" y="2504.0" />
+      <point x="-100.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="-95.33333333333326" y="-72.0" />
+      <point x="6617.166666666666" y="3993.0" />
+      <point x="6505.725208333341" y="3993.0" />
+      <point x="6505.725208333341" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="99.66666666666669" y="-72.0" />
+      <point x="5504.265486111117" y="4033.0" />
+      <point x="5598.182152777784" y="4033.0" />
+      <point x="5598.182152777784" y="3953.0" />
+      <point x="5760.725208333341" y="3953.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.dao.SubjectDAO" relationship="DEPENDENCY">
+      <point x="86.75" y="-72.0" />
+      <point x="260.25" y="3288.0" />
+      <point x="108.25" y="3288.0" />
+      <point x="108.25" y="3228.0" />
+      <point x="2792.118680555558" y="3228.0" />
+      <point x="2792.118680555558" y="3148.0" />
+      <point x="2589.493680555558" y="3148.0" />
+      <point x="56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.model.User" target="com.learning.spring.security.model.Role" relationship="TO_ONE">
+      <point x="59.0" y="-195.0" />
+      <point x="5745.618680555559" y="2544.0" />
+      <point x="5719.118680555559" y="2544.0" />
+      <point x="67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="5751.743680555559" y="4073.0" />
+      <point x="5760.993680555559" y="4073.0" />
+      <point x="5760.993680555559" y="3973.0" />
+      <point x="5954.975208333341" y="3973.0" />
+      <point x="5954.975208333341" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ReviewDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="53.5" y="-50.0" />
+      <point x="3421.3270138888915" y="1718.0" />
+      <point x="4000.5634722222258" y="1718.0" />
+      <point x="4000.5634722222258" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="5751.743680555559" y="4073.0" />
+      <point x="5760.993680555559" y="4073.0" />
+      <point x="5760.993680555559" y="3733.0" />
+      <point x="5588.706944444444" y="3733.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.models.Task" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2464.0" />
+      <point x="2522.993680555558" y="2464.0" />
+      <point x="2522.993680555558" y="1678.0" />
+      <point x="3286.0634722222258" y="1678.0" />
+      <point x="3286.0634722222258" y="974.0" />
+      <point x="3227.557152777784" y="974.0" />
+      <point x="3227.557152777784" y="874.0" />
+      <point x="3436.910347222225" y="874.0" />
+      <point x="0.0" y="184.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TaskDAO" target="com.learning.spring.dao.ReportDAO" relationship="DEPENDENCY">
+      <point x="-78.5" y="-83.0" />
+      <point x="1160.0" y="1768.0" />
+      <point x="2472.535347222225" y="1768.0" />
+      <point x="2472.535347222225" y="1548.0" />
+      <point x="1156.2668750000066" y="1548.0" />
+      <point x="1156.2668750000066" y="1538.0" />
+      <point x="706.75" y="1538.0" />
+      <point x="57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TaskDAO" target="com.learning.spring.models.Report" relationship="DEPENDENCY">
+      <point x="-78.5" y="-83.0" />
+      <point x="1160.0" y="1768.0" />
+      <point x="2472.535347222225" y="1768.0" />
+      <point x="2472.535347222225" y="1538.0" />
+      <point x="2467.035347222225" y="1538.0" />
+      <point x="2467.035347222225" y="463.0" />
+      <point x="3091.410347222225" y="463.0" />
+      <point x="0.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.dao.TaskDAO" relationship="TO_ONE">
+      <point x="-86.75" y="-72.0" />
+      <point x="86.75" y="2564.0" />
+      <point x="396.25" y="2564.0" />
+      <point x="396.25" y="2464.0" />
+      <point x="1160.0" y="2464.0" />
+      <point x="-78.5" y="83.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.dao.TeacherDAO" relationship="TO_ONE">
+      <point x="103.0" y="-39.0" />
+      <point x="4122.791666666667" y="4043.0" />
+      <point x="5544.456944444444" y="4043.0" />
+      <point x="5544.456944444444" y="3873.0" />
+      <point x="5559.456944444444" y="3873.0" />
+      <point x="5559.456944444444" y="3723.0" />
+      <point x="4993.833333333334" y="3723.0" />
+      <point x="56.75" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ConnectingStudentDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="85.0" y="-94.0" />
+      <point x="1817.368680555558" y="1608.0" />
+      <point x="2773.666666666667" y="1608.0" />
+      <point x="2773.666666666667" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.dao.AdminDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-83.0" />
+      <point x="7255.813472222226" y="3643.0" />
+      <point x="7003.225208333341" y="3643.0" />
+      <point x="7003.225208333341" y="3633.0" />
+      <point x="7048.225208333341" y="3633.0" />
+      <point x="55.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.AdminDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="-55.0" y="-94.0" />
+      <point x="6938.225208333341" y="3288.0" />
+      <point x="6988.225208333341" y="3288.0" />
+      <point x="6988.225208333341" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="0.0" y="-72.0" />
+      <point x="5404.598819444451" y="3873.0" />
+      <point x="5400.706944444444" y="3873.0" />
+      <point x="5400.706944444444" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.models.Review" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3138.0" />
+      <point x="3719.3270138888915" y="3138.0" />
+      <point x="3719.3270138888915" y="2534.0" />
+      <point x="4200.47520833334" y="2534.0" />
+      <point x="4200.47520833334" y="1738.0" />
+      <point x="4355.452013888892" y="1738.0" />
+      <point x="0.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.security.model.Role" target="com.learning.spring.security.model.Permission" relationship="TO_MANY">
+      <point x="67.25" y="-85.0" />
+      <point x="5719.118680555559" y="1768.0" />
+      <point x="5698.368680555559" y="1768.0" />
+      <point x="46.5" y="74.0" />
+    </edge>
+    <edge source="com.learning.spring.security.model.User" target="com.learning.spring.models.Student" relationship="DEPENDENCY">
+      <point x="-59.0" y="-195.0" />
+      <point x="5627.618680555559" y="2584.0" />
+      <point x="5345.563472222226" y="2584.0" />
+      <point x="5345.563472222226" y="2514.0" />
+      <point x="3765.4752083333397" y="2514.0" />
+      <point x="3765.4752083333397" y="2504.0" />
+      <point x="3887.7252083333397" y="2504.0" />
+      <point x="-100.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReviewController" target="com.learning.spring.models.Review" relationship="CREATE">
+      <point x="-95.33333333333331" y="-61.0" />
+      <point x="3055.8333333333335" y="3783.0" />
+      <point x="3079.910347222225" y="3783.0" />
+      <point x="3079.910347222225" y="1708.0" />
+      <point x="3934.827013888892" y="1708.0" />
+      <point x="3934.827013888892" y="1638.0" />
+      <point x="4256.452013888892" y="1638.0" />
+      <point x="-99.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.dao.TeacherDAO" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3873.0" />
+      <point x="4880.333333333334" y="3873.0" />
+      <point x="-56.75" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TaskRestController" target="com.learning.spring.dao.SubjectDAO" relationship="TO_ONE">
+      <point x="-69.5" y="-61.0" />
+      <point x="1421.0634722222258" y="3288.0" />
+      <point x="837.25" y="3288.0" />
+      <point x="837.25" y="3218.0" />
+      <point x="2400.493680555558" y="3218.0" />
+      <point x="2400.493680555558" y="3188.0" />
+      <point x="2477.493680555558" y="3188.0" />
+      <point x="-56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ReportDAO" target="com.learning.spring.models.Report" relationship="CREATE">
+      <point x="-57.75" y="-61.0" />
+      <point x="591.25" y="453.0" />
+      <point x="554.8736111111107" y="453.0" />
+      <point x="554.8736111111107" y="443.0" />
+      <point x="2997.4103472222246" y="443.0" />
+      <point x="-94.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.security.UserDetailsServiceImpl" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="66.25" y="-39.0" />
+      <point x="6108.493680555559" y="4073.0" />
+      <point x="6068.848819444451" y="4073.0" />
+      <point x="6068.848819444451" y="3713.0" />
+      <point x="5588.706944444444" y="3713.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Subject" target="com.learning.spring.models.ConnectingStudent" relationship="DEPENDENCY">
+      <point x="-73.25" y="-250.0" />
+      <point x="3618.182152777784" y="964.0" />
+      <point x="3275.5634722222258" y="964.0" />
+      <point x="3275.5634722222258" y="914.0" />
+      <point x="2768.535347222225" y="914.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.dao.AdminDAO" relationship="TO_ONE">
+      <point x="103.0" y="-39.0" />
+      <point x="4122.791666666667" y="4043.0" />
+      <point x="5544.456944444444" y="4043.0" />
+      <point x="5544.456944444444" y="4003.0" />
+      <point x="6988.225208333341" y="4003.0" />
+      <point x="6988.225208333341" y="3643.0" />
+      <point x="6938.225208333341" y="3643.0" />
+      <point x="-55.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReportController" target="com.learning.spring.dao.ReportDAO" relationship="TO_ONE">
+      <point x="-91.66666666666674" y="-50.0" />
+      <point x="831.3333333333335" y="1768.0" />
+      <point x="219.56347222222576" y="1768.0" />
+      <point x="219.56347222222576" y="1538.0" />
+      <point x="591.25" y="1538.0" />
+      <point x="-57.75" y="61.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.dao.ConnectingStudentDAO" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2494.0" />
+      <point x="1817.368680555558" y="2494.0" />
+      <point x="85.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.JDBC" target="com.learning.spring.util.PropertiesDbUtil" relationship="DEPENDENCY">
+      <point x="0.0" y="-73.0" />
+      <point x="3993.4738194444503" y="453.0" />
+      <point x="4018.327013888892" y="453.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.dao.ReviewDAO" relationship="DEPENDENCY">
+      <point x="56.75" y="-94.0" />
+      <point x="4993.833333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3148.0" />
+      <point x="3421.3270138888915" y="3148.0" />
+      <point x="53.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReviewController" target="com.learning.spring.dao.StudentDAO" relationship="TO_ONE">
+      <point x="0.0" y="-61.0" />
+      <point x="3151.166666666667" y="4073.0" />
+      <point x="3090.910347222225" y="4073.0" />
+      <point x="3090.910347222225" y="3833.0" />
+      <point x="4065.3488194444503" y="3833.0" />
+      <point x="4065.3488194444503" y="3743.0" />
+      <point x="3696.666666666667" y="3743.0" />
+      <point x="80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="95.33333333333337" y="-72.0" />
+      <point x="6807.833333333334" y="4063.0" />
+      <point x="7113.313472222226" y="4063.0" />
+      <point x="7113.725208333341" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Subject" target="com.learning.spring.models.ConnectingStudent" relationship="TO_MANY">
+      <point x="73.25" y="-250.0" />
+      <point x="3764.682152777784" y="954.0" />
+      <point x="3454.7301388888923" y="954.0" />
+      <point x="3454.7301388888923" y="884.0" />
+      <point x="2863.535347222225" y="884.0" />
+      <point x="95.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ConnectingController" target="com.learning.spring.dao.ConnectingStudentDAO" relationship="DEPENDENCY">
+      <point x="-108.0" y="-127.0" />
+      <point x="237.25" y="2584.0" />
+      <point x="649.0" y="2584.0" />
+      <point x="649.0" y="2514.0" />
+      <point x="1817.368680555558" y="2514.0" />
+      <point x="85.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReviewRestController" target="com.learning.spring.dao.ReviewDAO" relationship="DEPENDENCY">
+      <point x="-96.0" y="-50.0" />
+      <point x="2549.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="3783.0" />
+      <point x="2731.743680555558" y="3783.0" />
+      <point x="2731.743680555558" y="3258.0" />
+      <point x="3421.3270138888915" y="3258.0" />
+      <point x="53.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TaskRestController" target="com.learning.spring.models.Task" relationship="DEPENDENCY">
+      <point x="69.5" y="-61.0" />
+      <point x="1560.0634722222258" y="3288.0" />
+      <point x="2300.493680555558" y="3288.0" />
+      <point x="2300.493680555558" y="3198.0" />
+      <point x="2289.993680555558" y="3198.0" />
+      <point x="2289.993680555558" y="1648.0" />
+      <point x="3109.666666666667" y="1648.0" />
+      <point x="3109.666666666667" y="974.0" />
+      <point x="3227.557152777784" y="974.0" />
+      <point x="3227.557152777784" y="874.0" />
+      <point x="3436.910347222225" y="874.0" />
+      <point x="0.0" y="184.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="0.0" y="-83.0" />
+      <point x="7255.813472222226" y="4063.0" />
+      <point x="7615.683541666673" y="4063.0" />
+      <point x="7615.683541666673" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.dao.SubjectDAO" relationship="TO_ONE">
+      <point x="-86.75" y="-72.0" />
+      <point x="86.75" y="3208.0" />
+      <point x="2400.493680555558" y="3208.0" />
+      <point x="2400.493680555558" y="3188.0" />
+      <point x="2477.493680555558" y="3188.0" />
+      <point x="-56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3893.0" />
+      <point x="5588.706944444444" y="3893.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ReviewDAO" target="com.learning.spring.models.Review" relationship="CREATE">
+      <point x="-53.5" y="-50.0" />
+      <point x="3314.3270138888915" y="2564.0" />
+      <point x="3190.1884722222258" y="2564.0" />
+      <point x="3190.1884722222258" y="1708.0" />
+      <point x="3934.827013888892" y="1708.0" />
+      <point x="3934.827013888892" y="1638.0" />
+      <point x="4256.452013888892" y="1638.0" />
+      <point x="-99.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.AdminController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="-88.0" y="-83.0" />
+      <point x="7167.813472222226" y="4053.0" />
+      <point x="7103.313472222226" y="4053.0" />
+      <point x="7103.313472222226" y="3693.0" />
+      <point x="5760.725208333341" y="3693.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ConnectingTeacherDAO" target="com.learning.spring.models.ConnectingTeacher" relationship="CREATE">
+      <point x="-85.5" y="-94.0" />
+      <point x="2008.868680555558" y="1628.0" />
+      <point x="2920.910347222225" y="1628.0" />
+      <point x="2920.910347222225" y="924.0" />
+      <point x="3059.5770138888915" y="924.0" />
+      <point x="-95.33333333333333" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.dao.TeacherDAO" relationship="TO_ONE">
+      <point x="99.66666666666669" y="-72.0" />
+      <point x="5504.265486111117" y="4033.0" />
+      <point x="5598.182152777784" y="4033.0" />
+      <point x="5598.182152777784" y="3863.0" />
+      <point x="5559.456944444444" y="3863.0" />
+      <point x="5559.456944444444" y="3723.0" />
+      <point x="4993.833333333334" y="3723.0" />
+      <point x="56.75" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="1688.0" />
+      <point x="3496.8134722222258" y="1688.0" />
+      <point x="3496.8134722222258" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.models.Task" relationship="DEPENDENCY">
+      <point x="86.75" y="-72.0" />
+      <point x="260.25" y="3288.0" />
+      <point x="108.25" y="3288.0" />
+      <point x="108.25" y="3198.0" />
+      <point x="118.75" y="3198.0" />
+      <point x="118.75" y="1568.0" />
+      <point x="2456.035347222225" y="1568.0" />
+      <point x="2456.035347222225" y="974.0" />
+      <point x="3227.557152777784" y="974.0" />
+      <point x="3227.557152777784" y="874.0" />
+      <point x="3436.910347222225" y="874.0" />
+      <point x="0.0" y="184.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.models.Teacher" relationship="CREATE">
+      <point x="-56.75" y="-94.0" />
+      <point x="4880.333333333334" y="3138.0" />
+      <point x="4640.331944444444" y="3138.0" />
+      <point x="4640.331944444444" y="2544.0" />
+      <point x="4790.313472222226" y="2544.0" />
+      <point x="-111.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.security.model.User" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3853.0" />
+      <point x="4345.313472222226" y="3853.0" />
+      <point x="4345.313472222226" y="3278.0" />
+      <point x="5681.618680555559" y="3278.0" />
+      <point x="5681.618680555559" y="3208.0" />
+      <point x="5627.618680555559" y="3208.0" />
+      <point x="-59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.models.Student" relationship="DEPENDENCY">
+      <point x="-103.0" y="-39.0" />
+      <point x="3916.791666666667" y="4073.0" />
+      <point x="3905.8270138888915" y="4073.0" />
+      <point x="3905.8270138888915" y="3853.0" />
+      <point x="4075.8488194444503" y="3853.0" />
+      <point x="4075.8488194444503" y="2574.0" />
+      <point x="3765.4752083333397" y="2574.0" />
+      <point x="3765.4752083333397" y="2504.0" />
+      <point x="3887.7252083333397" y="2504.0" />
+      <point x="-100.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.service.ScheduleService" target="com.learning.spring.util.JsonReader" relationship="TO_ONE">
+      <point x="-155.66666666666652" y="-62.0" />
+      <point x="77.83333333333348" y="4747.0" />
+      <point x="100.15277777777783" y="4747.0" />
+      <point x="-48.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="0.0" y="-72.0" />
+      <point x="6712.5" y="4073.0" />
+      <point x="6820.993680555559" y="4073.0" />
+      <point x="6820.993680555559" y="3703.0" />
+      <point x="5760.725208333341" y="3703.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.InitDb" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.0" />
+      <point x="5278.063472222226" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="-99.0" y="-72.0" />
+      <point x="3363.666666666667" y="3783.0" />
+      <point x="3353.916666666667" y="3783.0" />
+      <point x="3353.916666666667" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="-99.66666666666669" y="-72.0" />
+      <point x="5304.932152777784" y="4073.0" />
+      <point x="5058.348819444451" y="4073.0" />
+      <point x="5058.348819444451" y="3913.0" />
+      <point x="5588.706944444444" y="3913.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Teacher" target="com.learning.spring.models.Review" relationship="DEPENDENCY">
+      <point x="-111.75" y="-316.0" />
+      <point x="4790.313472222226" y="1768.0" />
+      <point x="4807.60020833334" y="1768.0" />
+      <point x="4807.60020833334" y="1668.0" />
+      <point x="4355.452013888892" y="1668.0" />
+      <point x="0.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.security.UserDetailsServiceImpl" target="com.learning.spring.security.model.User" relationship="DEPENDENCY">
+      <point x="66.25" y="-39.0" />
+      <point x="6108.493680555559" y="4073.0" />
+      <point x="6068.848819444451" y="4073.0" />
+      <point x="6068.848819444451" y="3993.0" />
+      <point x="6124.725208333341" y="3993.0" />
+      <point x="6124.725208333341" y="3278.0" />
+      <point x="5681.618680555559" y="3278.0" />
+      <point x="5681.618680555559" y="3208.0" />
+      <point x="5627.618680555559" y="3208.0" />
+      <point x="-59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TeacherController" target="com.learning.spring.models.Teacher" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="5751.743680555559" y="4073.0" />
+      <point x="5760.993680555559" y="4073.0" />
+      <point x="5760.993680555559" y="3973.0" />
+      <point x="5954.975208333341" y="3973.0" />
+      <point x="5954.975208333341" y="2574.0" />
+      <point x="5345.563472222226" y="2574.0" />
+      <point x="5345.563472222226" y="2504.0" />
+      <point x="5013.813472222226" y="2504.0" />
+      <point x="111.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.security.model.Role" target="com.learning.spring.security.model.Permission" relationship="DEPENDENCY">
+      <point x="-67.25" y="-85.0" />
+      <point x="5584.618680555558" y="1768.0" />
+      <point x="5605.368680555558" y="1768.0" />
+      <point x="-46.5" y="74.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="123.0" y="-94.0" />
+      <point x="4797.916666666667" y="4053.0" />
+      <point x="4650.202013888892" y="4053.0" />
+      <point x="4650.202013888892" y="3933.0" />
+      <point x="5760.725208333341" y="3933.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.AdminDAO" target="com.learning.spring.models.Admin" relationship="CREATE">
+      <point x="55.0" y="-94.0" />
+      <point x="7048.225208333341" y="3258.0" />
+      <point x="7317.725208333341" y="3258.0" />
+      <point x="7317.725208333341" y="3248.0" />
+      <point x="7223.475208333341" y="3248.0" />
+      <point x="-99.25" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TaskDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="-78.5" y="-83.0" />
+      <point x="1160.0" y="1768.0" />
+      <point x="2472.535347222225" y="1768.0" />
+      <point x="2472.535347222225" y="944.0" />
+      <point x="3993.473819444451" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="99.0" y="-72.0" />
+      <point x="3561.666666666667" y="4073.0" />
+      <point x="3895.3270138888915" y="4073.0" />
+      <point x="3895.3270138888915" y="3923.0" />
+      <point x="5760.725208333341" y="3923.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.SecurityUser" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="0.0" y="-151.0" />
+      <point x="6315.225208333341" y="3258.0" />
+      <point x="6512.333333333334" y="3258.0" />
+      <point x="6512.333333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ConnectingRestController" target="com.learning.spring.dao.ConnectingTeacherDAO" relationship="TO_ONE">
+      <point x="-113.75" y="-116.0" />
+      <point x="1246.9384722222258" y="2584.0" />
+      <point x="1183.875" y="2584.0" />
+      <point x="1183.875" y="2504.0" />
+      <point x="1193.875" y="2504.0" />
+      <point x="1193.875" y="2464.0" />
+      <point x="2008.868680555558" y="2464.0" />
+      <point x="-85.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ConnectingRestController" target="com.learning.spring.dao.ConnectingStudentDAO" relationship="TO_ONE">
+      <point x="-113.75" y="-116.0" />
+      <point x="1246.9384722222258" y="2584.0" />
+      <point x="1183.875" y="2584.0" />
+      <point x="1183.875" y="2474.0" />
+      <point x="1647.368680555558" y="2474.0" />
+      <point x="-85.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="3462.666666666667" y="4073.0" />
+      <point x="3439.5634722222258" y="4073.0" />
+      <point x="3439.5634722222258" y="3763.0" />
+      <point x="3884.8270138888915" y="3763.0" />
+      <point x="3884.8270138888915" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ConnectingRestController" target="com.learning.spring.models.ConnectingStudent" relationship="DEPENDENCY">
+      <point x="113.75" y="-116.0" />
+      <point x="1474.4384722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2444.0" />
+      <point x="1551.868680555558" y="2444.0" />
+      <point x="1551.868680555558" y="1588.0" />
+      <point x="2636.75" y="1588.0" />
+      <point x="2636.75" y="994.0" />
+      <point x="2768.535347222225" y="994.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.dao.StudentDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="4674.916666666667" y="4063.0" />
+      <point x="4367.702013888892" y="4063.0" />
+      <point x="4367.702013888892" y="3773.0" />
+      <point x="3536.166666666667" y="3773.0" />
+      <point x="-80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TaskRestController" target="com.learning.spring.dao.TaskDAO" relationship="TO_ONE">
+      <point x="-69.5" y="-61.0" />
+      <point x="1421.0634722222258" y="3288.0" />
+      <point x="837.25" y="3288.0" />
+      <point x="837.25" y="2564.0" />
+      <point x="396.25" y="2564.0" />
+      <point x="396.25" y="2464.0" />
+      <point x="1160.0" y="2464.0" />
+      <point x="-78.5" y="83.0" />
+    </edge>
+    <edge source="com.learning.spring.service.ScheduleService" target="com.learning.spring.models.Schedule" relationship="CREATE">
+      <point x="155.66666666666674" y="-62.0" />
+      <point x="389.16666666666674" y="4747.0" />
+      <point x="799.1666666666667" y="4747.0" />
+      <point x="799.1666666666667" y="4737.0" />
+      <point x="433.6527777777778" y="4737.0" />
+      <point x="0.0" y="162.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TaskDAO" target="com.learning.spring.models.Task" relationship="CREATE">
+      <point x="78.5" y="-83.0" />
+      <point x="1317.0" y="1578.0" />
+      <point x="2625.75" y="1578.0" />
+      <point x="2625.75" y="934.0" />
+      <point x="3357.5770138888915" y="934.0" />
+      <point x="-79.33333333333337" y="184.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReviewRestController" target="com.learning.spring.models.Review" relationship="DEPENDENCY">
+      <point x="-96.0" y="-50.0" />
+      <point x="2549.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="4073.0" />
+      <point x="2514.8134722222258" y="3783.0" />
+      <point x="757.25" y="3783.0" />
+      <point x="757.25" y="2554.0" />
+      <point x="2321.993680555558" y="2554.0" />
+      <point x="2321.993680555558" y="1738.0" />
+      <point x="4355.452013888892" y="1738.0" />
+      <point x="0.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Student" target="com.learning.spring.models.Report" relationship="TO_MANY">
+      <point x="100.75" y="-316.0" />
+      <point x="4089.2252083333397" y="1758.0" />
+      <point x="4306.938472222226" y="1758.0" />
+      <point x="4306.938472222226" y="1688.0" />
+      <point x="4171.598819444451" y="1688.0" />
+      <point x="4171.598819444451" y="934.0" />
+      <point x="5232.063472222226" y="934.0" />
+      <point x="5232.063472222226" y="443.0" />
+      <point x="3441.910347222225" y="443.0" />
+      <point x="3441.910347222225" y="433.0" />
+      <point x="3185.410347222225" y="433.0" />
+      <point x="94.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.models.Subject" relationship="CREATE">
+      <point x="-56.0" y="-94.0" />
+      <point x="2477.493680555558" y="2564.0" />
+      <point x="2365.743680555558" y="2564.0" />
+      <point x="2365.743680555558" y="1698.0" />
+      <point x="3593.765486111117" y="1698.0" />
+      <point x="-97.66666666666674" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="4674.916666666667" y="4063.0" />
+      <point x="4367.702013888892" y="4063.0" />
+      <point x="4367.702013888892" y="3903.0" />
+      <point x="5588.706944444444" y="3903.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="-99.66666666666669" y="-72.0" />
+      <point x="5304.932152777784" y="4073.0" />
+      <point x="5058.348819444451" y="4073.0" />
+      <point x="5058.348819444451" y="3733.0" />
+      <point x="5384.438472222226" y="3733.0" />
+      <point x="5384.438472222226" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.SubjectRestController" target="com.learning.spring.dao.SubjectDAO" relationship="DEPENDENCY">
+      <point x="60.0" y="-72.0" />
+      <point x="2661.243680555558" y="3248.0" />
+      <point x="2792.118680555558" y="3248.0" />
+      <point x="2792.118680555558" y="3148.0" />
+      <point x="2589.493680555558" y="3148.0" />
+      <point x="56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Student" target="com.learning.spring.models.Report" relationship="DEPENDENCY">
+      <point x="-100.75" y="-316.0" />
+      <point x="3887.7252083333397" y="1768.0" />
+      <point x="4155.598819444451" y="1768.0" />
+      <point x="4155.598819444451" y="463.0" />
+      <point x="3091.410347222225" y="463.0" />
+      <point x="0.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.models.Student" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="3462.666666666667" y="4073.0" />
+      <point x="3439.5634722222258" y="4073.0" />
+      <point x="3439.5634722222258" y="3763.0" />
+      <point x="3364.916666666667" y="3763.0" />
+      <point x="3364.916666666667" y="3248.0" />
+      <point x="3250.3270138888915" y="3248.0" />
+      <point x="3250.3270138888915" y="2574.0" />
+      <point x="3765.4752083333397" y="2574.0" />
+      <point x="3765.4752083333397" y="2504.0" />
+      <point x="3887.7252083333397" y="2504.0" />
+      <point x="-100.75" y="316.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.dao.AdminDAO" relationship="DEPENDENCY">
+      <point x="95.33333333333337" y="-72.0" />
+      <point x="6807.833333333334" y="4063.0" />
+      <point x="7113.313472222226" y="4063.0" />
+      <point x="7113.313472222226" y="3663.0" />
+      <point x="7003.225208333341" y="3663.0" />
+      <point x="7003.225208333341" y="3633.0" />
+      <point x="7048.225208333341" y="3633.0" />
+      <point x="55.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Teacher" target="com.learning.spring.models.Subject" relationship="TO_MANY">
+      <point x="111.75" y="-316.0" />
+      <point x="5013.813472222226" y="1728.0" />
+      <point x="5278.063472222226" y="1728.0" />
+      <point x="5278.063472222226" y="1658.0" />
+      <point x="4416.291666666667" y="1658.0" />
+      <point x="4416.291666666667" y="1648.0" />
+      <point x="3789.0988194444503" y="1648.0" />
+      <point x="97.66666666666674" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Subject" target="com.learning.spring.models.Task" relationship="DEPENDENCY">
+      <point x="-73.25" y="-250.0" />
+      <point x="3618.182152777784" y="964.0" />
+      <point x="3275.5634722222258" y="964.0" />
+      <point x="3275.5634722222258" y="894.0" />
+      <point x="3227.557152777784" y="894.0" />
+      <point x="3227.557152777784" y="874.0" />
+      <point x="3436.910347222225" y="874.0" />
+      <point x="0.0" y="184.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.TaskController" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="86.75" y="-72.0" />
+      <point x="260.25" y="3288.0" />
+      <point x="108.25" y="3288.0" />
+      <point x="108.25" y="3198.0" />
+      <point x="118.75" y="3198.0" />
+      <point x="118.75" y="2474.0" />
+      <point x="1071.0" y="2474.0" />
+      <point x="1071.0" y="1748.0" />
+      <point x="3691.432152777784" y="1748.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Teacher" target="com.learning.spring.models.Review" relationship="TO_MANY">
+      <point x="111.75" y="-316.0" />
+      <point x="5013.813472222226" y="1728.0" />
+      <point x="5278.063472222226" y="1728.0" />
+      <point x="5278.063472222226" y="1648.0" />
+      <point x="4454.452013888892" y="1648.0" />
+      <point x="99.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.SubjectDAO" target="com.learning.spring.models.ConnectingStudent" relationship="DEPENDENCY">
+      <point x="56.0" y="-94.0" />
+      <point x="2589.493680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2584.0" />
+      <point x="2538.993680555558" y="2464.0" />
+      <point x="2376.743680555558" y="2464.0" />
+      <point x="2376.743680555558" y="1658.0" />
+      <point x="3191.166666666667" y="1658.0" />
+      <point x="3191.166666666667" y="994.0" />
+      <point x="2768.535347222225" y="994.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.security.dao.UserDAO" relationship="TO_ONE">
+      <point x="103.0" y="-39.0" />
+      <point x="4122.791666666667" y="4043.0" />
+      <point x="5544.456944444444" y="4043.0" />
+      <point x="5544.456944444444" y="3943.0" />
+      <point x="5760.725208333341" y="3943.0" />
+      <point x="5760.725208333341" y="3643.0" />
+      <point x="5806.225208333341" y="3643.0" />
+      <point x="50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.models.Subject" target="com.learning.spring.models.Task" relationship="TO_MANY">
+      <point x="73.25" y="-250.0" />
+      <point x="3764.682152777784" y="954.0" />
+      <point x="3454.7301388888923" y="954.0" />
+      <point x="3454.7301388888923" y="884.0" />
+      <point x="3516.243680555558" y="884.0" />
+      <point x="79.33333333333326" y="184.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.models.Review" relationship="DEPENDENCY">
+      <point x="56.75" y="-94.0" />
+      <point x="4993.833333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3128.0" />
+      <point x="5136.063472222226" y="3128.0" />
+      <point x="5136.063472222226" y="1738.0" />
+      <point x="4355.452013888892" y="1738.0" />
+      <point x="0.0" y="172.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ConnectingController" target="com.learning.spring.models.ConnectingStudent" relationship="DEPENDENCY">
+      <point x="-108.0" y="-127.0" />
+      <point x="237.25" y="2584.0" />
+      <point x="649.0" y="2584.0" />
+      <point x="649.0" y="2454.0" />
+      <point x="523.0" y="2454.0" />
+      <point x="523.0" y="994.0" />
+      <point x="2768.535347222225" y="994.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.TeacherRestController" target="com.learning.spring.dao.TeacherDAO" relationship="DEPENDENCY">
+      <point x="-99.66666666666669" y="-72.0" />
+      <point x="5304.932152777784" y="4073.0" />
+      <point x="5058.348819444451" y="4073.0" />
+      <point x="5058.348819444451" y="3863.0" />
+      <point x="4880.333333333334" y="3863.0" />
+      <point x="-56.75" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="56.75" y="-94.0" />
+      <point x="4993.833333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3128.0" />
+      <point x="5335.063472222226" y="3128.0" />
+      <point x="5335.063472222226" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.dao.StudentDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="3462.666666666667" y="4073.0" />
+      <point x="3439.5634722222258" y="4073.0" />
+      <point x="3439.5634722222258" y="3813.0" />
+      <point x="3536.166666666667" y="3813.0" />
+      <point x="-80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.DefaultController" target="com.learning.spring.dao.StudentDAO" relationship="TO_ONE">
+      <point x="103.0" y="-39.0" />
+      <point x="4122.791666666667" y="4043.0" />
+      <point x="5544.456944444444" y="4043.0" />
+      <point x="5544.456944444444" y="3753.0" />
+      <point x="4065.3488194444503" y="3753.0" />
+      <point x="4065.3488194444503" y="3743.0" />
+      <point x="3696.666666666667" y="3743.0" />
+      <point x="80.25" y="105.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.security.model.User" relationship="DEPENDENCY">
+      <point x="56.75" y="-94.0" />
+      <point x="4993.833333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3258.0" />
+      <point x="5681.618680555559" y="3258.0" />
+      <point x="5681.618680555559" y="3208.0" />
+      <point x="5627.618680555559" y="3208.0" />
+      <point x="-59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.ConnectingTeacherDAO" target="com.learning.spring.dao.JDBC" relationship="DEPENDENCY">
+      <point x="85.5" y="-94.0" />
+      <point x="2179.868680555558" y="1638.0" />
+      <point x="2931.910347222225" y="1638.0" />
+      <point x="2931.910347222225" y="944.0" />
+      <point x="3993.4738194444503" y="944.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.SubjectController" target="com.learning.spring.dao.SubjectDAO" relationship="TO_ONE">
+      <point x="-60.25" y="-94.0" />
+      <point x="2802.493680555558" y="3198.0" />
+      <point x="2400.493680555558" y="3198.0" />
+      <point x="2400.493680555558" y="3188.0" />
+      <point x="2477.493680555558" y="3188.0" />
+      <point x="-56.0" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.AdminRestController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="95.33333333333337" y="-72.0" />
+      <point x="6807.833333333334" y="4063.0" />
+      <point x="7113.313472222226" y="4063.0" />
+      <point x="7113.313472222226" y="3673.0" />
+      <point x="5588.706944444444" y="3673.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.service.ScheduleService" target="com.learning.spring.util.JsonReader" relationship="DEPENDENCY">
+      <point x="0.0" y="-62.0" />
+      <point x="233.5" y="4747.0" />
+      <point x="197.15277777777783" y="4747.0" />
+      <point x="48.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.dao.ReviewDAO" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3168.0" />
+      <point x="3421.3270138888915" y="3168.0" />
+      <point x="53.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ReviewController" target="com.learning.spring.dao.ReviewDAO" relationship="DEPENDENCY">
+      <point x="95.33333333333337" y="-61.0" />
+      <point x="3246.5" y="4073.0" />
+      <point x="3187.410347222225" y="4073.0" />
+      <point x="3187.410347222225" y="3258.0" />
+      <point x="3421.3270138888915" y="3258.0" />
+      <point x="53.5" y="50.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ReportRestController" target="com.learning.spring.models.Report" relationship="DEPENDENCY">
+      <point x="58.25" y="-39.0" />
+      <point x="304.0" y="1548.0" />
+      <point x="200.875" y="1548.0" />
+      <point x="200.875" y="463.0" />
+      <point x="3091.410347222225" y="463.0" />
+      <point x="0.0" y="206.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.StudentController" target="com.learning.spring.security.model.Role" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.0" />
+      <point x="4674.916666666667" y="4063.0" />
+      <point x="4367.702013888892" y="4063.0" />
+      <point x="4367.702013888892" y="3863.0" />
+      <point x="4435.165277777777" y="3863.0" />
+      <point x="4435.165277777777" y="2554.0" />
+      <point x="5516.833333333334" y="2554.0" />
+      <point x="5516.833333333334" y="2534.0" />
+      <point x="5584.618680555558" y="2534.0" />
+      <point x="-67.25" y="85.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.TeacherDAO" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="56.75" y="-94.0" />
+      <point x="4993.833333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3288.0" />
+      <point x="4846.083333333334" y="3128.0" />
+      <point x="4668.063472222226" y="3128.0" />
+      <point x="4668.063472222226" y="1748.0" />
+      <point x="3691.432152777784" y="1748.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.ConnectingRestController" target="com.learning.spring.models.ConnectingTeacher" relationship="DEPENDENCY">
+      <point x="113.75" y="-116.0" />
+      <point x="1474.4384722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2584.0" />
+      <point x="1869.5634722222258" y="2444.0" />
+      <point x="1912.868680555558" y="2444.0" />
+      <point x="1912.868680555558" y="1618.0" />
+      <point x="2906.416666666667" y="1618.0" />
+      <point x="2906.416666666667" y="984.0" />
+      <point x="3081.307152777784" y="984.0" />
+      <point x="3081.307152777784" y="874.0" />
+      <point x="3154.910347222225" y="874.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.SubjectController" target="com.learning.spring.models.Subject" relationship="DEPENDENCY">
+      <point x="60.25" y="-94.0" />
+      <point x="2922.993680555558" y="3248.0" />
+      <point x="2928.243680555558" y="3248.0" />
+      <point x="2928.243680555558" y="1748.0" />
+      <point x="3691.432152777784" y="1748.0" />
+      <point x="0.0" y="250.0" />
+    </edge>
+    <edge source="com.learning.spring.controllers.ConnectingController" target="com.learning.spring.dao.ConnectingTeacherDAO" relationship="TO_ONE">
+      <point x="108.0" y="-127.0" />
+      <point x="453.25" y="2574.0" />
+      <point x="756.8134722222258" y="2574.0" />
+      <point x="756.8134722222258" y="2494.0" />
+      <point x="1193.875" y="2494.0" />
+      <point x="1193.875" y="2464.0" />
+      <point x="2008.868680555558" y="2464.0" />
+      <point x="-85.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.config.SecurityConfig" target="com.learning.spring.security.util.Encoder" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="6689.725208333341" y="3228.0" />
+      <point x="6294.458333333334" y="3228.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.learning.spring.rest.StudentRestController" target="com.learning.spring.security.dao.UserDAO" relationship="DEPENDENCY">
+      <point x="0.0" y="-72.0" />
+      <point x="3462.666666666667" y="4073.0" />
+      <point x="3439.5634722222258" y="4073.0" />
+      <point x="3439.5634722222258" y="3883.0" />
+      <point x="5588.706944444444" y="3883.0" />
+      <point x="5588.706944444444" y="3643.0" />
+      <point x="5705.225208333341" y="3643.0" />
+      <point x="-50.5" y="94.0" />
+    </edge>
+    <edge source="com.learning.spring.security.dao.UserDAO" target="com.learning.spring.security.model.User" relationship="CREATE">
+      <point x="-50.5" y="-94.0" />
+      <point x="5705.225208333341" y="3268.0" />
+      <point x="5691.618680555559" y="3268.0" />
+      <point x="5691.618680555559" y="3208.0" />
+      <point x="5745.618680555559" y="3208.0" />
+      <point x="59.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.service.ScheduleService" target="com.learning.spring.models.Group" relationship="CREATE">
+      <point x="155.66666666666674" y="-62.0" />
+      <point x="389.16666666666674" y="4747.0" />
+      <point x="799.1666666666667" y="4747.0" />
+      <point x="799.1666666666667" y="4737.0" />
+      <point x="807.1527777777778" y="4737.0" />
+      <point x="0.0" y="195.0" />
+    </edge>
+    <edge source="com.learning.spring.dao.StudentDAO" target="com.learning.spring.dao.SubjectDAO" relationship="DEPENDENCY">
+      <point x="80.25" y="-105.0" />
+      <point x="3696.666666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3288.0" />
+      <point x="3547.166666666667" y="3178.0" />
+      <point x="2792.118680555558" y="3178.0" />
+      <point x="2792.118680555558" y="3148.0" />
+      <point x="2589.493680555558" y="3148.0" />
+      <point x="56.0" y="94.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5720534311157675" showDependencies="true" x="2312.7496551844756" y="3340.3530960101225" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

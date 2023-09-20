@@ -26,9 +26,9 @@ public class InitDb {
         ScriptRunner runner;
         runner = new ScriptRunner(JDBC.getInstance().getConnection());
         runner.setAutoCommit(true);
-        runner.setDelimiter("/");
+        runner.setDelimiter(";");
         try {
-            statement.execute("SELECT ID from Iogin_info");
+            statement.execute("SELECT ID from Login_info");
             ResultSet resultSet = statement.getResultSet();
         } catch (SQLException e) {
             runner.runScript(new InputStreamReader(classPathResource.getInputStream()));

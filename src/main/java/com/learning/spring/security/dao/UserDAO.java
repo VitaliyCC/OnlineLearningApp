@@ -20,7 +20,7 @@ public class UserDAO {
         User user = null;
         try (Connection connection = JDBC.getInstance().getConnection();
              PreparedStatement preparedStatement =
-                     connection.prepareStatement("SELECT * FROM Iogin_info where USERNAME = ?");
+                     connection.prepareStatement("SELECT * FROM Login_info where USERNAME = ?");
         ) {
 
             preparedStatement.setString(1, username);
@@ -49,7 +49,7 @@ public class UserDAO {
         User user = null;
         try (Connection connection = JDBC.getInstance().getConnection();
              PreparedStatement preparedStatement =
-                     connection.prepareStatement("SELECT * FROM Iogin_info where ID = ?");
+                     connection.prepareStatement("SELECT * FROM Login_info where ID = ?");
         ) {
 
             preparedStatement.setInt(1, id);
@@ -78,7 +78,7 @@ public class UserDAO {
         try (Connection connection = JDBC.getInstance().getConnection();
 
              PreparedStatement preparedStatementStudent =
-                     connection.prepareStatement("UPDATE Iogin_info set username=?, role=? where id =?");
+                     connection.prepareStatement("UPDATE Login_info set username=?, role=? where id =?");
         ) {
             preparedStatementStudent.setString(1, user.getLogin());
             preparedStatementStudent.setString(2, user.getRole().toString());
@@ -98,11 +98,11 @@ public class UserDAO {
         try (Connection connection = JDBC.getInstance().getConnection();
 
              PreparedStatement preparedStatement =
-                     connection.prepareStatement("INSERT INTO Iogin_info (id, password, username, role) VALUES (?, ?, ?,  ?)");
+                     connection.prepareStatement("INSERT INTO Login_info (id, password, username, role) VALUES (?, ?, ?,  ?)");
         ) {
             Statement statementForUser = connection.createStatement();
 
-            ResultSet resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Iogin_info");
+            ResultSet resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Login_info");
             resultSet.next();
             User.setCountUsers(resultSet.getInt(1) + 1);
 
@@ -123,7 +123,7 @@ public class UserDAO {
     public Boolean delete(int id) {
         try (Connection connection = JDBC.getInstance().getConnection();
              PreparedStatement preparedStatement =
-                     connection.prepareStatement("delete from Iogin_info where id =?");
+                     connection.prepareStatement("delete from Login_info where id =?");
         ) {
 
             preparedStatement.setInt(1, id);

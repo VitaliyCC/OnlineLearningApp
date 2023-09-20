@@ -1,278 +1,144 @@
-Create table Students
+
+
+
+CREATE TABLE Students
 (
-    student_id Integer           NOT NULL,
-    id         Integer Default 0 NOT NULL UNIQUE,
-    surname    Varchar2 (20) NOT NULL,
-    name       Varchar2 (20) NOT NULL,
-    patronymic Varchar2 (30),
-    primary key (student_id)
-)/
-Create table Teacher
+    student_id SERIAL PRIMARY KEY,
+    id         INTEGER NOT NULL UNIQUE DEFAULT 0,
+    surname    VARCHAR(20) NOT NULL,
+    name       VARCHAR(20) NOT NULL,
+    patronymic VARCHAR(30)
+);
+
+CREATE TABLE Teacher
 (
-    teacher_id Integer           NOT NULL,
-    id         Integer Default 0 NOT NULL UNIQUE,
-    surname    Varchar2 (20) NOT NULL,
-    name       Varchar2 (20) NOT NULL,
-    salary     Integer,
-    patronymic Varchar2 (30),
-    primary key (teacher_id)
-)
-/
-Create table Subject
+    teacher_id SERIAL PRIMARY KEY,
+    id         INTEGER NOT NULL UNIQUE DEFAULT 0,
+    surname    VARCHAR(20) NOT NULL,
+    name       VARCHAR(20) NOT NULL,
+    salary     INTEGER,
+    patronymic VARCHAR(30)
+);
+
+CREATE TABLE Subject
 (
-    subject_id   Integer Default -1 NOT NULL,
-    subject_name Varchar2 (20) NOT NULL,
-    semester     Varchar2 (30) NOT NULL,
-    max_grade    Integer,
-    primary key (subject_id)
-)
-/
-Create table Task
+    subject_id   SERIAL PRIMARY KEY,
+    subject_name VARCHAR(20) NOT NULL,
+    semester     VARCHAR(30) NOT NULL,
+    max_grade    INTEGER
+);
+
+CREATE TABLE Task
 (
-    task_name  Varchar2 (30) NOT NULL UNIQUE,
-    subject_id Integer Default -1 NOT NULL,
-    subject    Varchar2 (50) NOT NULL,
-    max_grade  Integer,
-    primary key (task_name, subject_id)
-)
-/
-Create table Report
+    task_name  VARCHAR(30) PRIMARY KEY,
+    subject_id INTEGER NOT NULL REFERENCES Subject(subject_id) ON DELETE CASCADE,
+    subject    VARCHAR(50) NOT NULL,
+    max_grade  INTEGER
+);
+
+CREATE TABLE Report
 (
-    report_id  Integer NOT NULL UNIQUE,
-    solution   Varchar2 (50) NOT NULL,
-    send_date  Date    NOT NULL,
-    student_id Integer NOT NULL,
-    task_name  Varchar2 (30) NOT NULL,
-    primary key (report_id, student_id, task_name)
-)
-/
-Create table Review
+    report_id  SERIAL PRIMARY KEY,
+    solution   VARCHAR(50) NOT NULL,
+    send_date  DATE NOT NULL,
+    student_id INTEGER NOT NULL REFERENCES Students(student_id) ON DELETE CASCADE,
+    task_name  VARCHAR(30) NOT NULL REFERENCES Task(task_name) ON DELETE CASCADE
+);
+
+CREATE TABLE Review
 (
-    review_id   Integer NOT NULL UNIQUE,
-    teacher_id  Integer NOT NULL,
-    report_id   Integer NOT NULL,
-    grade       Integer NOT NULL,
-    time_review Date    NOT NULL,
-    primary key (review_id, teacher_id, report_id)
-)/
+    review_id   SERIAL PRIMARY KEY,
+    teacher_id  INTEGER NOT NULL REFERENCES Teacher(teacher_id) ON DELETE SET NULL,
+    report_id   INTEGER NOT NULL REFERENCES Report(report_id) ON DELETE CASCADE,
+    grade       INTEGER NOT NULL,
+    time_review DATE NOT NULL
+);
 
-Create table Connecting_Student
+CREATE TABLE Connecting_Student
 (
-    id         Integer            NOT NULL,
-    student_id Integer            NOT NULL,
-    subject_id Integer Default -1 NOT NULL,
-    primary key (id, student_id, subject_id)
-)/
+    id         SERIAL PRIMARY KEY,
+    student_id INTEGER NOT NULL REFERENCES Students(student_id) ON DELETE CASCADE,
+    subject_id INTEGER NOT NULL REFERENCES Subject(subject_id) ON DELETE CASCADE
+);
 
-Create table Connecting_Teacher
+CREATE TABLE Connecting_Teacher
 (
-    id         Integer            NOT NULL,
-    teacher_id Integer            NOT NULL,
-    subject_id Integer Default -1 NOT NULL,
-    primary key (id, teacher_id, subject_id)
-)/
+    id         SERIAL PRIMARY KEY,
+    teacher_id INTEGER NOT NULL REFERENCES Teacher(teacher_id) ON DELETE CASCADE,
+    subject_id INTEGER NOT NULL REFERENCES Subject(subject_id) ON DELETE CASCADE
+);
 
-Create table Admin
+CREATE TABLE Admin
 (
-    admin_id   Integer           NOT NULL,
-    id         Integer Default 0 NOT NULL UNIQUE,
-    name       Varchar2 (30) NOT NULL,
-    surname    Varchar2 (30) NOT NULL,
-    patronymic Varchar2 (30),
-    primary key (admin_id)
-)/
+    admin_id SERIAL PRIMARY KEY,
+    id       INTEGER NOT NULL UNIQUE DEFAULT 0,
+    name     VARCHAR(30) NOT NULL,
+    surname  VARCHAR(30) NOT NULL,
+    patronymic VARCHAR(30)
+);
 
-Create table Iogin_info
+CREATE TABLE Login_info
 (
-    id       Integer Default 0 NOT NULL,
-    password Varchar2 (500) NOT NULL,
-    username Varchar2 (30) NOT NULL,
-    role     Varchar2 (30) NOT NULL,
-    primary key (id)
-)/
+    id       INTEGER PRIMARY KEY DEFAULT 0,
+    password VARCHAR(500) NOT NULL,
+    username VARCHAR(30) NOT NULL,
+    role     VARCHAR(30) NOT NULL
+);
 
-Alter table Report
-    add foreign key (student_id) references Students (student_id) on delete cascade/
+ALTER TABLE Report
+    ADD CONSTRAINT fk_report_student FOREIGN KEY (student_id) REFERENCES Students(student_id) ON DELETE CASCADE;
 
-Alter table Connecting_Student
-    add foreign key (student_id) references Students (student_id) on delete cascade/
+ALTER TABLE Connecting_Student
+    ADD CONSTRAINT fk_connecting_student_student FOREIGN KEY (student_id) REFERENCES Students(student_id) ON DELETE CASCADE;
 
-Alter table Review
-    add foreign key (teacher_id) references Teacher (teacher_id) on delete set null/
+ALTER TABLE Review
+    ADD CONSTRAINT fk_review_teacher FOREIGN KEY (teacher_id) REFERENCES Teacher(teacher_id) ON DELETE SET NULL;
 
-Alter table Connecting_Teacher
-    add foreign key (teacher_id) references Teacher (teacher_id) on delete cascade/
+ALTER TABLE Connecting_Teacher
+    ADD CONSTRAINT fk_connecting_teacher_teacher FOREIGN KEY (teacher_id) REFERENCES Teacher(teacher_id) ON DELETE CASCADE;
 
-Alter table Connecting_Student
-    add foreign key (subject_id) references Subject (subject_id) on delete cascade/
+ALTER TABLE Connecting_Student
+    ADD CONSTRAINT fk_connecting_student_subject FOREIGN KEY (subject_id) REFERENCES Subject(subject_id) ON DELETE CASCADE;
 
-Alter table Connecting_Teacher
-    add foreign key (subject_id) references Subject (subject_id) on delete cascade/
+ALTER TABLE Connecting_Teacher
+    ADD CONSTRAINT fk_connecting_teacher_subject FOREIGN KEY (subject_id) REFERENCES Subject(subject_id) ON DELETE CASCADE;
 
-Alter table Task
-    add foreign key (subject_id) references Subject (subject_id) on delete cascade/
+ALTER TABLE Task
+    ADD CONSTRAINT fk_task_subject FOREIGN KEY (subject_id) REFERENCES Subject(subject_id) ON DELETE CASCADE;
 
-Alter table Report
-    add foreign key (task_name) references Task (task_name) on delete cascade/
+ALTER TABLE Report
+    ADD CONSTRAINT fk_report_task FOREIGN KEY (task_name) REFERENCES Task(task_name) ON DELETE CASCADE;
 
-Alter table Review
-    add foreign key (report_id) references Report (report_id) on delete cascade/
--------------------------------
-create table EVENT_LOG
+ALTER TABLE Review
+    ADD CONSTRAINT fk_review_report FOREIGN KEY (report_id) REFERENCES Report(report_id) ON DELETE CASCADE;
+
+CREATE TABLE EVENT_LOG
 (
-    ID         int generated as identity,
-    DATE_TIME  timestamp not null,
-    TABLE_NAME VARCHAR2(50),
-    EVENT_TYPE VARCHAR2(50),
-    OBJECT_ID  VARCHAR2(50),
-    AUTHOR     VARCHAR2(50)
-)
-/
-BEGIN DBMS_SCHEDULER.CREATE_JOB(
-    JOB_NAME => 'Audit_job',
-    JOB_TYPE => 'PLSQL_BLOCK',
-    JOB_ACTION => 'TRUNCATE TABLE EVENT_LOG;',
-    START_DATE => TO_DATe('05-06-2022'),
-    REPEAT_INTERVAL => 'FREQ=MONTHLY; BYMONTHDAY=1',
-    END_DATE => TO_DATe('05-06-2032'),
-    COMMENTS => 'event table cleanup',
-    ENABLED => TRUE);
-END;
-/
+    ID         SERIAL PRIMARY KEY,
+    DATE_TIME  TIMESTAMP NOT NULL,
+    TABLE_NAME VARCHAR(50),
+    EVENT_TYPE VARCHAR(50),
+    OBJECT_ID  VARCHAR(50),
+    AUTHOR     VARCHAR(50)
+);
 
+-- Вставка даних в таблицю Login_info з хешованими паролями
+INSERT INTO Login_info (id, password, username, role)
+VALUES (1, '$2a$12$Kvc6ZRhW.fZYTc4w9mRIA.yCjVGUs0ie.jgm4K.16Ktl.AktqWf.m', 'Student', 'STUDENT');
 
-CREATE OR REPLACE TRIGGER STUDENT_AUDIT
-    AFTER INSERT OR UPDATE OR DELETE
-ON STUDENTS
-    FOR EACH ROW
-DECLARE
-v_username varchar2(50);
-BEGIN
-SELECT user
-INTO v_username
-FROM DUAL;
-CASE
-        WHEN INSERTING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'STUDENTS', 'INSERT', :new.STUDENT_ID, v_username);
-WHEN UPDATING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'STUDENTS', 'UPDATE', :new.STUDENT_ID, v_username);
-WHEN DELETING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'STUDENTS', 'DELETE', :old.STUDENT_ID, v_username);
-END
-CASE;
-END;
-/
+INSERT INTO Login_info (id, password, username, role)
+VALUES (2, '$2a$12$9CskWp6kiASko4rai6CuO.X8inijH.bv5g2IGRU6MqqCVIPgFb58O', 'Admin', 'ADMIN');
 
-CREATE OR REPLACE TRIGGER TEACHER_AUDIT
-    AFTER INSERT OR UPDATE OR DELETE
-ON TEACHER
-    FOR EACH ROW
-DECLARE
-v_username varchar2(50);
-BEGIN
-SELECT user
-INTO v_username
-FROM DUAL;
-CASE
-        WHEN INSERTING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'TEACHER', 'INSERT', :new.TEACHER_ID, v_username);
-WHEN UPDATING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'TEACHER', 'UPDATE', :new.TEACHER_ID, v_username);
-WHEN DELETING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'TEACHER', 'DELETE', :old.TEACHER_ID, v_username);
-END
-CASE;
-END;
-/
-CREATE OR  REPLACE TRIGGER ADMIN_AUDIT
-    AFTER INSERT OR UPDATE OR DELETE
-ON ADMIN
-    FOR EACH ROW
-DECLARE
-v_username varchar2(50);
-BEGIN
-SELECT user
-INTO v_username
-FROM DUAL;
-CASE
-        WHEN INSERTING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'ADMIN', 'INSERT', :new.ADMIN_ID, v_username);
-WHEN UPDATING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'ADMIN', 'UPDATE', :new.ADMIN_ID, v_username);
-WHEN DELETING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'ADMIN', 'DELETE', :old.ADMIN_ID, v_username);
-END
-CASE;
-END;
-/
-CREATE OR REPLACE TRIGGER SUBJECT_AUDIT
-    AFTER INSERT OR UPDATE OR DELETE
-ON SUBJECT
-    FOR EACH ROW
-DECLARE
-v_username varchar2(50);
-BEGIN
-SELECT user
-INTO v_username
-FROM DUAL;
-CASE
-        WHEN INSERTING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'SUBJECT', 'INSERT', :new.SUBJECT_ID, v_username);
-WHEN UPDATING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'SUBJECT', 'UPDATE', :new.SUBJECT_ID, v_username);
-WHEN DELETING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'SUBJECT', 'DELETE', :old.SUBJECT_ID, v_username);
-END
-CASE;
-END;
-/
-CREATE OR REPLACE TRIGGER LOGIN_INFO_AUDIT
-    AFTER INSERT OR UPDATE OR DELETE
-ON IOGIN_INFO
-    FOR EACH ROW
-DECLARE
-v_username varchar2(50);
-BEGIN
-SELECT user
-INTO v_username
-FROM DUAL;
-CASE
-        WHEN INSERTING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'SUBJECT', 'INSERT', :new.ID, v_username);
-WHEN UPDATING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'SUBJECT', 'UPDATE', :new.ID, v_username);
-WHEN DELETING THEN
-            INSERT INTO EVENT_LOG (DATE_TIME, TABLE_NAME, EVENT_TYPE, OBJECT_ID, AUTHOR)
-            VALUES (CURRENT_TIMESTAMP, 'SUBJECT', 'DELETE', :old.ID, v_username);
-END
-CASE;
-END;
-/
--------------------------------
-INSERT INTO Iogin_info (id, password, username, role)
-VALUES (1, '$2a$12$Kvc6ZRhW.fZYTc4w9mRIA.yCjVGUs0ie.jgm4K.16Ktl.AktqWf.m', 'Student', 'STUDENT')/
-INSERT INTO Iogin_info (id, password, username, role)
-VALUES (2, '$2a$12$9CskWp6kiASko4rai6CuO.X8inijH.bv5g2IGRU6MqqCVIPgFb58O', 'Admin', 'ADMIN')/
-INSERT INTO Iogin_info (id, password, username, role)
-VALUES (3, '$2a$12$5FW3nAcugaWNuKTK/cxQE.HEykTAjJzUMPIrFW4MR1hJVat9Kd3OS', 'Teacher', 'TEACHER')/
-INSERT INTO STUDENTS (STUDENT_ID, ID, SURNAME, NAME, PATRONYMIC)
-VALUES ('0', '1', 'SAVOSTIAN', 'VITALIY', 'V')/
-INSERT INTO TEACHER (teacher_id, id, surname, name, salary, patronymic)
-VALUES (0, 3, 'KOVAL', 'VITALIY', 5000, 'V')/
+INSERT INTO Login_info (id, password, username, role)
+VALUES (3, '$2a$12$5FW3nAcugaWNuKTK/cxQE.HEykTAjJzUMPIrFW4MR1hJVat9Kd3OS', 'Teacher', 'TEACHER');
+
+-- Вставка даних в таблиці Students, Teacher та Admin
+INSERT INTO Students (STUDENT_ID, ID, SURNAME, NAME, PATRONYMIC)
+VALUES (0, 1, 'SAVOSTIAN', 'VITALIY', 'V');
+
+INSERT INTO Teacher (teacher_id, id, surname, name, salary, patronymic)
+VALUES (0, 3, 'KOVAL', 'VITALIY', 5000, 'V');
+
 INSERT INTO Admin (admin_id, id, name, surname)
-VALUES (0, 2, 'PETRO', 'STEPANENCO')/
+VALUES (0, 2, 'PETRO', 'STEPANENCO');
 

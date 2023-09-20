@@ -38,7 +38,7 @@ public class JDBC {
 
         } catch (SQLException |
                 ClassNotFoundException e) {
-            System.out.println(e.toString());
+            System.out.println("//////////"+e.toString());
         }
         return connection;
     }
