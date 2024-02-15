@@ -20,7 +20,7 @@ public class TeacherDAO {
                 Connection connection = JDBC.getInstance().getConnection();
                 Statement statement = connection.createStatement();
         ) {
-            statement.execute("SELECT * from TEACHER NATURAL JOIN Iogin_info");
+            statement.execute("SELECT * from TEACHER NATURAL JOIN Login_info");
             ResultSet resultSet = statement.getResultSet();
 
             while (resultSet.next()) {
@@ -39,7 +39,7 @@ public class TeacherDAO {
         try (Connection connection = JDBC.getInstance().getConnection();
 
              PreparedStatement preparedStatementTeacher =
-                     connection.prepareStatement("SELECT * from Teacher NATURAL JOIN Iogin_info Where teacher_id=?");
+                     connection.prepareStatement("SELECT * from Teacher NATURAL JOIN Login_info Where teacher_id=?");
              PreparedStatement preparedStatementReview =
                      connection.prepareStatement("select * from Review where teacher_id = ?");
              PreparedStatement preparedStatementSubjects =
@@ -125,7 +125,7 @@ public class TeacherDAO {
         resultSet.next();
         Teacher.setCountTeacher(resultSet.getInt(1) + 1);
 
-        resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Iogin_info");
+        resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Login_info");
         resultSet.next();
         User.setCountUsers(resultSet.getInt(1) + 1);
 

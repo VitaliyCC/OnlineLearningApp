@@ -56,7 +56,7 @@ public class StudentDAO {
                 Connection connection = JDBC.getInstance().getConnection();
                 Statement statement = connection.createStatement();
         ) {
-            statement.execute("SELECT * from STUDENTs NATURAL JOIN Iogin_info");
+            statement.execute("SELECT * from STUDENTs NATURAL JOIN Login_info");
             ResultSet resultSet = statement.getResultSet();
 
             while (resultSet.next()) {
@@ -83,7 +83,7 @@ public class StudentDAO {
         resultSet.next();
         Student.setCountStudents(resultSet.getInt(1) + 1);
 
-        resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Iogin_info");
+        resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Login_info");
         resultSet.next();
         User.setCountUsers(resultSet.getInt(1) + 1);
 
@@ -134,7 +134,7 @@ public class StudentDAO {
              PreparedStatement preparedStatementReviews =
                      connection.prepareStatement("select * from  Review where report_id = ?");
              PreparedStatement preparedStatementStudent =
-                     connection.prepareStatement("SELECT * from STUDENTs NATURAL JOIN Iogin_info Where student_id=?");
+                     connection.prepareStatement("SELECT * from STUDENTs NATURAL JOIN Login_info Where student_id=?");
              PreparedStatement preparedStatementReports =
                      connection.prepareStatement("select * from Report where student_id = ?");
              PreparedStatement preparedStatementSubjects =

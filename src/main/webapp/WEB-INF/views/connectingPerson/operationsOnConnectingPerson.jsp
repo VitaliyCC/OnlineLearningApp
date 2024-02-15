@@ -31,7 +31,7 @@
                     <br>
                 </div>
                 <div class="col-sm-4">
-                    <h2>Connecting teacher</h2>
+                    <h2>Connecting student</h2>
                     <br>
 
                     <button type="button" id ="student" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newStudent">

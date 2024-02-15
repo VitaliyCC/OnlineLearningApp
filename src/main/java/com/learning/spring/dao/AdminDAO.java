@@ -21,7 +21,7 @@ public class AdminDAO {
                 Connection connection = JDBC.getInstance().getConnection();
                 Statement statement = connection.createStatement();
         ) {
-            statement.execute("SELECT * from ADMIN NATURAL JOIN Iogin_info");
+            statement.execute("SELECT * from ADMIN NATURAL JOIN Login_info");
             ResultSet resultSet = statement.getResultSet();
 
             while (resultSet.next()) {
@@ -39,7 +39,7 @@ public class AdminDAO {
         Admin admin = null;
         try (Connection connection = JDBC.getInstance().getConnection();
              PreparedStatement preparedStatement =
-                     connection.prepareStatement("SELECT * from ADMIN NATURAL JOIN Iogin_info where admin_id = ?");
+                     connection.prepareStatement("SELECT * from ADMIN NATURAL JOIN Login_info where admin_id = ?");
         ) {
 
             preparedStatement.setInt(1, id);
@@ -99,7 +99,7 @@ public class AdminDAO {
         resultSet.next();
         Admin.setCountAdmins(resultSet.getInt(1) + 1);
 
-        resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Iogin_info");
+        resultSet = statementForUser.executeQuery("SELECT MAX(ID) FROM Login_info");
         resultSet.next();
         User.setCountUsers(resultSet.getInt(1) + 1);
 
